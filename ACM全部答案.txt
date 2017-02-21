@@ -1,0 +1,8808 @@
+
+Welcome To Dalian Neusoft Institute of Information ACM-ICPC Online Judge
+
+Home	Web Board ProblemSet Status Ranklist 3 Contest F.A.Qs
+ ModifyUser DLDR13110100206 (0) Logout 
+Problem1000
+
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	while(scanf("%d%d",&b,&a)  !=EOF)
+		printf("%d\n",a+b);
+	return 0;
+}
+Problem1001
+
+#include<stdio.h>
+int main()
+{
+	int i,word[13];
+	for(i=0;i<13;i++)
+		{
+		while (scanf("%d",&word[i]) !=EOF)
+		printf("%c",word[i]);
+		}
+	printf("\n");
+	return 0;
+}
+Problem1002
+
+#include <stdio.h>
+#include <math.h>
+int main( )
+{
+	int n,i;
+	int a;
+   scanf("%d",&a);
+
+	for( n=2;  n<=a; ++n )
+	{
+		for( i = 2; i<=sqrt(n); i++)
+		if ( n % i == 0 )
+		break;
+		if ( i>sqrt(n) ) 
+	printf("%d\n", n);
+	}
+	return 0;
+}
+
+
+Problem1003
+
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	while( scanf("%d%d",&a,&b) !=EOF)
+	printf("%d\n",a+b);
+	return 0;
+}
+Problem1004
+
+#include<stdio.h>
+int main()
+{
+	int a,b,n,c;
+	int x;
+	while (scanf("%d",&n) !=EOF)
+	{
+		x=1;
+		while(x<=n)
+		{
+		scanf("%d%d",&a,&b);
+		c=a+b;
+
+		printf("%d\n",c);
+		x++;
+		}
+	}
+	return 0;
+}
+Problem1005
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	
+         scanf("%d%d",&a,&b);
+		while( a!=0||b!=0)
+		{
+			
+		c=a+b;
+	    printf("%d\n",c);
+		scanf("%d%d",&a,&b);
+		
+		}
+		
+
+	return 0;
+}
+Problem1006
+
+#include<stdio.h>
+int main()
+{
+	int n,m,a[100],sum;
+	sum=0;
+   	scanf("%d",&m);
+		while(m!=0)
+		{
+		     for(n=0;n<m;n++)
+		{
+			 scanf("%d",&a[n]);
+		 	sum=sum+a[n];
+		}
+	       	printf("%d\n",sum);
+			scanf("%d",&m);
+			sum=0;
+		}
+	return 0;
+	
+}
+
+Problem1007
+
+#include<stdio.h>
+int main()
+{
+	int n,m,a[100],sum,i,j;
+	sum=0,i=1;
+	scanf("%d",&j);
+     scanf("%d",&m);
+   	
+		while(m!=0)	
+{			
+		
+		     for(n=0;n<m;n++)
+		{
+			 scanf("%d",&a[n]);
+		 	sum=sum+a[n];
+		}
+	       	printf("%d\n",sum);
+			i++;
+			if(i<=j)
+			{
+			scanf("%d",&m);
+			sum=0;
+			}
+			else
+				break;
+		
+}
+	
+	return 0;
+	
+
+}
+Problem1008
+
+#include<stdio.h>
+int main()
+{
+	int n,m,a[100],sum;
+	sum=0;
+   	while (scanf("%d",&m)  !=EOF)
+		
+		{
+		     for(n=0;n<m;n++)
+		{
+			 scanf("%d",&a[n]);
+		 	sum=sum+a[n];
+		}
+	       	printf("%d\n",sum);
+			
+			sum=0;
+		}
+	return 0;
+	
+}
+Problem1009
+
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	while (scanf("%d%d",&a,&b)   !=EOF)
+	{printf("%d\n",a+b);
+	printf("\n");}
+	 
+	return 0;
+}
+Problem1010
+
+#include<stdio.h>
+int main()
+{
+	int n,m,a[100],sum,i,j;
+	sum=0,i=1;
+	scanf("%d",&j);
+     scanf("%d",&m);
+   	
+		while(m!=0)	
+{			
+		
+		     for(n=0;n<m;n++)
+		{
+			 scanf("%d",&a[n]);
+		 	sum=sum+a[n];
+		}
+	       	printf("%d\n\n",sum);
+			
+			
+			i++;
+			if(i<=j)
+			{
+			scanf("%d",&m);
+			sum=0;
+			}
+			else
+				break;		
+}	
+	return 0;
+}
+Problem1011
+
+#include<stdio.h>
+#include<string.h>
+int  main()
+{
+int i=0,n,t;
+char str[100];
+gets(str);
+n=strlen(str)-1;
+while(i<n)
+{t=str[i],str[i]=str[n],str[n]=t;
+i++,n--;
+}
+puts(str);
+return 0;
+}
+Problem1012
+
+#include<stdio.h>
+int main()
+{
+ char a[100];
+    int n,i;
+    scanf("%d",&n);
+     gets(a);
+ while(gets(a)!=0)
+    
+ {
+  n--;
+ 
+  if(n>=0)
+ 
+  {
+   
+   for(i=0;a[i]!='\0';i++)
+    
+    printf("%c",a[i]);
+   
+   printf("\n");
+   printf("\n");
+ 
+  }
+ 
+  else
+ 
+  {
+   for(i=0;a[i]!='\0';i++)
+  
+    if(a[i]==' ')
+    {
+     printf("\n");
+
+     printf("\n");
+    }
+
+     
+    else printf("%c",a[i]);
+ 
+    printf("\n");
+    printf("\n");
+  }
+ 
+ }
+ 
+ return 0;
+}
+
+Problem1013
+
+#include <stdio.h>
+int finul(int n);
+int main()
+{
+	int n,m,i,t,max=0,a,b;
+	while (scanf("%d %d",&n,&m)!=EOF)
+	{
+		max=0;
+		if(n>m)
+		{
+			a=n;
+			b=m;
+			t=n;n=m;m=t;
+		}
+
+		for(i=n;i<=m;i++)
+		{   
+			if(finul(i)>max)
+				max=finul(i);
+		}
+		if(a>b)
+		printf("%d %d %d\n",a,b,max+1);
+		else 
+		printf("%d %d %d\n",n,m,max+1);
+	}
+	return 0;
+}
+int finul(int n)
+{ 
+	int nul=0;
+	while(n!=1)
+	{
+		
+		if(n%2==0)
+			n/=2;
+		     
+		else
+			n=3*n+1;
+		nul++;
+	}
+	return nul;
+}
+Problem1014
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i,j;
+	char a[102][102];
+	for(i=0;i<101;i++)
+		for(j=0;j<101;j++)
+			a[i][j]='0';
+		int m,n;
+		int jishu=0,hehe=0;
+		for(;;)
+		{ 
+			cin>>m>>n;
+			hehe++;
+		if(m==0&&n==0)
+			break;
+		for(i=1;i<=m;i++)
+			for(j=1;j<=n;j++)
+				cin>>a[i][j];
+			for(i=1;i<=m;i++)
+				for(j=1;j<=n;j++)
+				{
+					if(a[i][j]!='*')
+					{
+					   if(a[i-1][j-1]=='*')
+						jishu++;
+					   if(a[i-1][j]=='*')
+						jishu++;
+					   if(a[i-1][j+1]=='*')
+						jishu++;
+					   if(a[i][j-1]=='*')
+						jishu++;
+					   if(a[i][j+1]=='*')
+						jishu++;
+					   if(a[i+1][j-1]=='*')
+						jishu++;
+					   if(a[i+1][j]=='*')
+						jishu++;
+					   if(a[i+1][j+1]=='*')
+						jishu++;
+					   a[i][j]=jishu+'0';
+					    jishu=0;
+					}
+			}
+				if(hehe!=1)
+					cout<<'\n';
+				cout<<"Field #"<<hehe<<":\n";
+				for(i=1;i<=m;i++)
+					for(j=1;j<=n;j++)
+					{
+						cout<<a[i][j];
+						if(j==n)cout<<'\n';
+					}
+		}
+		return 0;}
+Problem1014
+
+#include<iostream.h>
+
+int main()
+{
+	int i,j;
+	char a[102][102];
+	for(i=0;i<101;i++)
+		for(j=0;j<101;j++)
+			a[i][j]='0';
+		int m,n;
+		int jishu=0,hehe=0;
+		for(;;)
+		{ 
+			cin>>m>>n;
+			hehe++;
+		if(m==0&&n==0)
+			break;
+		for(i=1;i<=m;i++)
+			for(j=1;j<=n;j++)
+				cin>>a[i][j];
+			for(i=1;i<=m;i++)
+				for(j=1;j<=n;j++)
+				{if(a[i][j]!='*'){
+					if(a[i-1][j-1]=='*')
+						jishu++;
+					if(a[i-1][j]=='*')
+						jishu++;
+					if(a[i-1][j+1]=='*')
+						jishu++;
+					if(a[i][j-1]=='*')
+						jishu++;
+					if(a[i][j+1]=='*')
+						jishu++;
+					if(a[i+1][j-1]=='*')
+						jishu++;
+					if(a[i+1][j]=='*')
+						jishu++;
+					if(a[i+1][j+1]=='*')
+						jishu++;
+					a[i][j]=jishu+'0';
+					    jishu=0;
+				}
+			}
+				if(hehe!=1)
+					cout<<'\n';
+				cout<<"Field #"<<hehe<<":\n";
+				for(i=1;i<=m;i++)
+					for(j=1;j<=n;j++)
+					{
+						cout<<a[i][j];
+						if(j==n)cout<<'\n';
+					}
+		}
+		return 0;}
+Problem1014
+
+#include<iostream.h>
+
+int main()
+{
+	int i,j;
+	char a[102][102];
+	for(i=0;i<101;i++)
+		for(j=0;j<101;j++)
+			a[i][j]='0';
+		int m,n;
+		int jishu=0,hehe=0;
+		for(;;)
+		{ 
+			cin>>m>>n;
+			hehe++;
+		if(m==0&&n==0)
+			break;
+		for(i=1;i<=m;i++)
+			for(j=1;j<=n;j++)
+				cin>>a[i][j];
+			for(i=1;i<=m;i++)
+				for(j=1;j<=n;j++)
+				{if(a[i][j]!='*'){
+					if(a[i-1][j-1]=='*')
+						jishu++;
+					if(a[i-1][j]=='*')
+						jishu++;
+					if(a[i-1][j+1]=='*')
+						jishu++;
+					if(a[i][j-1]=='*')
+						jishu++;
+					if(a[i][j+1]=='*')
+						jishu++;
+					if(a[i+1][j-1]=='*')
+						jishu++;
+					if(a[i+1][j]=='*')
+						jishu++;
+					if(a[i+1][j+1]=='*')
+						jishu++;
+					a[i][j]=jishu+'0';
+					    jishu=0;
+				}
+			}
+				if(hehe!=1)
+					cout<<'\n';
+				cout<<"Field #"<<hehe<<":\n";
+				for(i=1;i<=m;i++)
+					for(j=1;j<=n;j++)
+					{
+						cout<<a[i][j];
+						if(j==n)cout<<'\n';
+					}
+		}
+		return 0;}
+Problem1015
+
+#include <stdio.h>  
+int main()  
+{  
+    int n,i,k=0,h=1,s;  
+    scanf("%d",&n);  
+    for(s=0;s<n;s++)  
+    {  
+        h=h+s;  
+        k=h;  
+        for(i=1;i<=n-s;i++)  
+        {  
+            if(i==n-s)  
+            {  
+                k=k+i+s;  
+                printf("%d",k-1-s);  
+            }  
+            else
+            {  
+                k=k+i+s;  
+                printf("%d ",k-1-s);  
+            }  
+        }  
+        printf("\n");  
+    }  
+    return 0;  
+}
+Problem1018
+
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<queue>
+
+using namespace std;
+
+int n;
+queue<int> q;
+int ok = 1;
+void output()
+{
+    int tmp=q.front();
+    q.pop();
+    while(!q.empty())
+    output();
+    if(ok == 1)
+    {
+        printf("%d",tmp);
+        ok = 0;
+    }
+    else
+        printf(" %d",tmp);
+
+}
+
+int main()
+{
+
+    int t;
+    cin>>t;
+    while(t--)
+   {
+        ok =1;
+        cin>>n;
+        int cnt;
+        while(n>0)
+        {
+            q.push(n);
+            cnt=n;
+            n--;
+            while(cnt--)
+            {
+                int tmp=q.front();
+                q.pop();
+                q.push(tmp);
+            }
+        }
+        output();
+        printf("\n");
+    }
+    return 0;
+}
+Problem1018
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+string str[14];
+
+int t,n;
+
+int main()
+
+{
+
+    cin>>t;
+
+    str[1]="1";
+
+    str[2]="2 1";
+
+    str[3]="3 1 2";
+
+    str[4]="2 1 4 3";
+
+    str[5]="3 1 4 5 2";
+
+    str[6]="4 1 6 3 2 5";
+
+    str[7]="5 1 3 4 2 6 7";
+
+    str[8]="3 1 7 5 2 6 8 4";
+
+    str[9]="7 1 8 6 2 9 4 5 3";
+
+    str[10]="9 1 8 5 2 4 7 6 3 10";
+
+    str[11]="5 1 6 4 2 10 11 7 3 8 9";
+
+    str[12]="7 1 4 9 2 11 10 8 3 6 5 12";
+
+    str[13]="4 1 13 11 2 10 6 7 3 5 12 9 8";
+
+    while(t--)
+
+    {
+
+        cin>>n;
+
+        cout<<str[n]<<endl;
+
+    }
+
+    return 0;
+
+}
+Problem1020
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+
+using namespace std;
+
+struct Robt{
+     int x,y;
+     char o;
+}robt[105];   //i号robt的位置以及变化来的状态
+
+int A,B,n,m;
+char W = 'W', E = 'E', N = 'N', S = 'S';
+
+int main(){
+    int T;
+    scanf("%d",&T);
+    while(T--){
+        scanf("%d%d%d%d",&A,&B,&n,&m);
+        int flag = 0;      //1表示出界，2表示相撞，0表示OK
+        int ansrobt, ansrobt2;
+        int g[105][105];
+        memset(g, 0, sizeof(g));
+        for(int i = 1; i<=n; i++){
+            int a,b;
+            char c;
+            cin>>a>>b>>c;
+            robt[i].x = a;
+            robt[i].y = b;
+            if(c == W) robt[i].o = E;
+            else if(c == E) robt[i].o = W;
+            if(c == N) robt[i].o = S;
+            if(c == S) robt[i].o = N;
+            g[a][b] = i;
+        }
+
+        for(int j = 0; j<m; j++){
+            int num,rep;
+            char c;
+            cin>>num>>c>>rep;
+            if(flag)  continue;
+
+            if(c == 'F'){
+                g[robt[num].x][robt[num].y] = 0;
+                char ch = robt[num].o;
+                for(int k = 0; k<rep; k++){
+                    if(ch == W) robt[num].x += 1;
+                    if(ch == E) robt[num].x -= 1;
+                    if(ch == N) robt[num].y -= 1;
+                    if(ch == S) robt[num].y += 1;
+                    if(g[robt[num].x][robt[num].y]){
+                        ansrobt = num;
+                        ansrobt2 = g[robt[num].x][robt[num].y];
+                        flag = 2;
+                        break;
+                    }
+                    if(robt[num].x == 0 || robt[num].x == A+1 || robt[num].y == 0 || robt[num].y == B+1){
+                        ansrobt = num;
+                        flag = 1;
+                        break;
+                    }
+                }
+                g[robt[num].x][robt[num].y] = num;
+            }
+            if(c == 'L'){
+                char ch = robt[num].o;
+                if(rep%4 == 1){
+                    if(ch == W) robt[num].o = S;
+                    if(ch == E)  robt[num].o = N;
+                    if(ch == N) robt[num].o = W;
+                    if(ch == S) robt[num].o = E;
+                }
+                if(rep%4 == 2){
+                    if(ch == W) robt[num].o = E;
+                    if(ch == E)  robt[num].o = W;
+                    if(ch == N) robt[num].o = S;
+                    if(ch == S) robt[num].o = N;
+                }
+                if(rep%4 == 3){
+                    if(ch == W) robt[num].o = N;
+                    if(ch == E)  robt[num].o = S;
+                    if(ch == N) robt[num].o = E;
+                    if(ch == S) robt[num].o = W;
+                }
+            }
+            if(c == 'R'){
+                char ch = robt[num].o;
+                if(rep%4 == 1){
+                    if(ch == W) robt[num].o = N;
+                    if(ch == E)  robt[num].o = S;
+                    if(ch == N) robt[num].o = E;
+                    if(ch == S) robt[num].o = W;
+                }
+                if(rep%4 == 2){
+                    if(ch == W) robt[num].o = E;
+                    if(ch == E)  robt[num].o = W;
+                    if(ch == N) robt[num].o = S;
+                    if(ch == S) robt[num].o = N;
+                }
+                if(rep%4 == 3){
+                    if(ch == W) robt[num].o = S;
+                    if(ch == E)  robt[num].o = N;
+                    if(ch == N) robt[num].o = W;
+                    if(ch == S) robt[num].o = E;
+                }
+            }
+        }
+
+        switch(flag){
+             case 0: printf("OK\n");break;
+             case 1: printf("Robot %d crashes into the wall\n",ansrobt);break;
+             case 2: printf("Robot %d crashes into robot %d\n",ansrobt,ansrobt2);break;
+        }
+    }
+    return 0;
+}
+Problem1020
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+
+using namespace std;
+
+struct Robt{
+     int x,y;
+     char o;
+}robt[105];   //i号robt的位置以及变化来的状态
+
+int A,B,n,m;
+char W = 'W', E = 'E', N = 'N', S = 'S';
+
+int main(){
+    int T;
+    scanf("%d",&T);
+    while(T--){
+        scanf("%d%d%d%d",&A,&B,&n,&m);
+        int flag = 0;      //1表示出界，2表示相撞，0表示OK
+        int ansrobt, ansrobt2;
+        int g[105][105];
+        memset(g, 0, sizeof(g));
+        for(int i = 1; i<=n; i++)
+        {
+            int a,b;
+            char c;
+            cin>>a>>b>>c;
+            robt[i].x = a;
+            robt[i].y = b;
+            if(c == W) robt[i].o = E;
+            else if(c == E) robt[i].o = W;
+            if(c == N) robt[i].o = S;
+            if(c == S) robt[i].o = N;
+            g[a][b] = i;
+        }
+
+        for(int j = 0; j<m; j++)
+        {
+            int num,rep;
+            char c;
+            cin>>num>>c>>rep;
+            if(flag)  continue;
+
+            if(c == 'F')
+            {
+                g[robt[num].x][robt[num].y] = 0;
+                char ch = robt[num].o;
+                for(int k = 0; k<rep; k++)
+                    {
+                    if(ch == W) robt[num].x += 1;
+                    if(ch == E) robt[num].x -= 1;
+                    if(ch == N) robt[num].y -= 1;
+                    if(ch == S) robt[num].y += 1;
+                    if(g[robt[num].x][robt[num].y])
+                    {
+                        ansrobt = num;
+                        ansrobt2 = g[robt[num].x][robt[num].y];
+                        flag = 2;
+                        break;
+                    }
+                    if(robt[num].x == 0 || robt[num].x == A+1 || robt[num].y == 0 || robt[num].y == B+1)
+                    {
+                        ansrobt = num;
+                        flag = 1;
+                        break;
+                    }
+                }
+                g[robt[num].x][robt[num].y] = num;
+            }
+            if(c == 'L')
+            {
+                char ch = robt[num].o;
+                if(rep%4 == 1)
+                {
+                    if(ch == W) robt[num].o = S;
+                    if(ch == E)  robt[num].o = N;
+                    if(ch == N) robt[num].o = W;
+                    if(ch == S) robt[num].o = E;
+                }
+                if(rep%4 == 2)
+                {
+                    if(ch == W) robt[num].o = E;
+                    if(ch == E)  robt[num].o = W;
+                    if(ch == N) robt[num].o = S;
+                    if(ch == S) robt[num].o = N;
+                }
+                if(rep%4 == 3)
+                {
+                    if(ch == W) robt[num].o = N;
+                    if(ch == E)  robt[num].o = S;
+                    if(ch == N) robt[num].o = E;
+                    if(ch == S) robt[num].o = W;
+                }
+            }
+            if(c == 'R')
+            {
+                char ch = robt[num].o;
+                if(rep%4 == 1)
+                {
+                    if(ch == W) robt[num].o = N;
+                    if(ch == E)  robt[num].o = S;
+                    if(ch == N) robt[num].o = E;
+                    if(ch == S) robt[num].o = W;
+                }
+                if(rep%4 == 2)
+                {
+                    if(ch == W) robt[num].o = E;
+                    if(ch == E)  robt[num].o = W;
+                    if(ch == N) robt[num].o = S;
+                    if(ch == S) robt[num].o = N;
+                }
+                if(rep%4 == 3)
+                {
+                    if(ch == W) robt[num].o = S;
+                    if(ch == E)  robt[num].o = N;
+                    if(ch == N) robt[num].o = W;
+                    if(ch == S) robt[num].o = E;
+                }
+            }
+        }
+
+        switch(flag)
+        {
+             case 0: printf("OK\n");break;
+             case 1: printf("Robot %d crashes into the wall\n",ansrobt);break;
+             case 2: printf("Robot %d crashes into robot %d\n",ansrobt,ansrobt2);break;
+        }
+    }
+    return 0;
+}
+Problem1021
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    int k,m;
+    while(cin>>n)
+    {
+        while(n--)
+        {
+            int sum=0;
+            cin>>k;
+            for(int i=0;i<k;i++)
+            {
+                cin>>m;
+                sum+=m;
+            }
+            if(k==1)
+                cout<<sum<<endl;
+            else
+                cout<<sum-k+1<<endl;
+        }
+    }
+    return 0;
+}
+Problem1021
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    int k,m;
+    while(cin>>n)
+    {
+        while(n--)
+        {
+            int sum=0;
+            cin>>k;
+            for(int i=0;i<k;i++)
+            {
+                cin>>m;
+                sum+=m;
+            }
+
+                cout<<sum-k+1<<endl;
+        }
+    }
+    return 0;
+}
+Problem1035
+
+#include <iostream>
+#include <cmath>
+#include <set>
+using namespace std;
+
+int main()
+{
+ int n;
+ int m;
+ cin>>m;
+  while(m--)
+ {
+    set<int> s;
+    cin>>n;
+    int g =0;
+    int * p = new int[n];
+    for(int i =0; i < n; i++ )  cin>>p[i];
+    while(++g)
+    {
+        s.clear();
+        for(int i = 0; i< n ; i++)
+       {
+         int count = p[i] % g;
+         
+         s.insert(count);
+
+       }
+
+       if(s.size() == n)  break;
+    }
+    cout<<g<<endl;
+    delete [] p;
+    s.clear();
+
+
+ }
+    return 0;
+}
+Problem1040
+
+#include<stdio.h>
+int main()
+{
+printf("**************************\n");
+printf("         Very    Good!\n");
+printf("**************************\n");
+return 0;
+}
+Problem1041
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a<b)
+	{
+	    a=b;	
+	}
+
+
+      if(a<c)
+	{	
+	    a=c;
+	}
+
+	printf("%d\n",a);
+	return 0;
+}
+Problem1042
+
+#include<stdio.h>
+int main()
+{
+	char a,b,c,d,e;
+	scanf("%c%c%c%c%c",&a,&b,&c,&d,&e);
+	a='G';
+	b='l';
+	c='m';
+	d='r';
+	e='e';
+	printf("%c%c%c%c%c\n",a,b,c,d,e);
+	return 0;
+}
+Problem1043
+
+#include<stdio.h>
+int main()
+{
+	double r,h,PI;
+	double C1,Sa,Sb,Va,Vb;
+	PI=3.14;
+	scanf("%lf%lf",&r,&h);
+	C1=2*PI*r;
+	Sa=PI*r*r;
+	Sb=4*PI*r*r;
+	Va=(4.0/3.0)*PI*r*r*r;
+	Vb=PI*r*r*h;
+	printf("C1=%.2lf\n",C1);
+	printf("Sa=%.2lf\n",Sa);
+	printf("Sb=%.2lf\n",Sb);
+	printf("Va=%.2lf\n",Va);
+	printf("Vb=%.2lf\n",Vb);
+
+	return 0;
+}
+Problem1044
+
+#include<stdio.h>
+int main()
+{
+	double c,f;
+	scanf("%lf",&f);
+	c=5*(f-32)/9;
+	printf("c=%.2lf\n",c);
+	return 0;
+}
+Problem1045
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a<b)
+	{
+	    a=b;	
+	}
+
+
+      if(a<c)
+	{	
+	    a=c;
+	}
+
+	printf("%d\n",a);
+	return 0;
+}
+Problem1046
+
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d",&x);
+	if(x<1)
+	{
+		y=x;
+	printf("%d\n",y);
+	}
+	else if(x<=10)
+	{
+		y=2*x-1;
+	printf("%d\n",y);
+	}
+	else if(x>=10)
+	{
+		y=3*x-11;
+		printf("%d\n",y);
+	}
+
+	return 0;
+}
+Problem1047
+
+#include<stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	if(a>=90)
+		printf("A\n");
+	else if(a>=80)
+		printf("B\n");
+	else if(a>=70)
+		printf("C\n");
+	else if(a>=60)
+	printf("D\n");
+	else if(a<60)
+	printf("E\n");
+
+	return 0;
+}
+Problem1048
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d,e,f;
+	scanf("%d",&a);
+	if(a>9999)
+		printf("5\n");
+	else if(a>999)
+		printf("4\n");
+	else if(a>99)
+		printf("3\n");
+	else if(a>9)
+		printf("2\n");
+	else if(a>=1)
+		printf("1\n");
+	b=a/10000;
+	c=a/1000%10;
+	d=a/100%10;
+	e=a/10%10;
+	f=a%10;
+	if(b!=0)
+	{
+		printf("%d %d %d %d %d\n",b,c,d,e,f);
+		printf("%d%d%d%d%d\n",f,e,d,c,b);
+	}
+	else if(c!=0)
+	{
+		printf("%d %d %d %d\n",c,d,e,f);
+		printf("%d%d%d%d\n",f,e,d,c);
+		
+	}
+	else if(d!=0)
+	{
+		printf("%d %d %d\n",d,e,f);
+		printf("%d%d%d\n",f,e,d);
+	}
+	else if(e!=0)
+	{
+		printf("%d %d\n",e,f);
+		printf("%d%d\n",f,e);
+	}
+	else if (f!=0)
+	{
+		printf("%d\n",f);
+		printf("%d\n",f);
+	}
+
+	
+
+
+
+	return 0;
+}
+Problem1049
+
+#include <stdio.h>
+int main()
+{
+	int n,c;
+	int sum;
+	scanf("%d",&n);
+	c=n/100000;
+	switch(c)
+	{
+    case 0:sum=n*0.1;break;
+	case 1:sum=(n-100000)*0.075+100000*0.1;break;
+	case 2:case 3:
+		sum=100000*0.75+(n-200000)*0.05;break;
+	case 5:case 4:
+		sum=100000*0.75+200000*0.05+(n-400000)*0.03;break;
+	case 6:case 7:case 8:case 9:case 10:
+		sum=100000*0.75+200000*0.05+200000*0.03+(n-600000)*0.015;break;
+	}
+		printf("%d\n",sum);
+
+	return 0;
+}
+Problem1050
+
+#include<stdio.h>
+int g(int a,int b)
+
+{
+	int r,t;
+	if(a<b)
+	{t=a;a=b;b=t;}
+	r=a%b;
+	while(r)
+	{
+	a=b;
+	b=r;
+	r=a%b;
+	
+	}
+	return b;
+}
+
+    int main()
+	{
+		int a,b;
+		scanf("%d %d",&a,&b);
+		printf("%d %d\n",g(a,b),a*b/g(a,b));
+	return 0;
+
+}
+Problem1051
+
+#include<stdio.h>
+int main()
+{
+	char c;
+	int letters=0,space=0,digit=0,others=0;
+	while(   (c=getchar())    !='\n')
+	{
+		if(c>='a'&&c<='z'||c>='A'&&c<='Z')
+			letters++;
+		else if(c==' ')
+			space++;
+		else if(c>='0'&&c<='9')
+			digit++;
+		else
+			others++;
+	}
+	printf("%d %d %d %d\n",letters,digit,space,others);
+	return 0;
+}
+Problem1052
+
+#include<stdio.h>
+int main()
+{
+	int n,a,b,c,sum;
+	n=1;c=1;b=2,sum=0;
+		scanf("%d",&a);
+	while(a-1>=n)
+	{
+		
+		   c=c*10;
+			b=b+2*c;
+			++n;
+			sum=sum+b;
+
+	}
+	printf("%d\n",sum+2);
+	
+	
+
+	return 0;
+}
+Problem1053
+
+  #include<stdio.h>
+  int main()
+{
+  long long int sn,h;
+int n,m; 
+scanf("%d",&n);
+{
+     sn=0; 
+ h=1;
+ m=1;
+ while(m<=n)
+ {
+    h=h*m;
+sn=sn+h;
+        m=m+1;
+     }
+  printf("%lld\n",sn);
+  }
+  return 0;
+ 
+   }
+Problem1054
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c,sum1, sum2, n,m,j;
+	double  sum3;
+	sum1=sum2=0;
+	sum3=0;
+	scanf("%d",&n);
+	scanf("%d",&m);
+	scanf("%d",&j);
+	for(a=1;a<=n;a++)
+	
+		sum1=sum1+a;
+	
+	for(b=1;b<=m;b++)
+		sum2=sum2+(b*b);
+	for(c=1;c<=j;c++)
+		sum3=sum3+1.0/c;
+	
+	printf("%.2lf\n",sum1+sum3+sum2);
+	
+	
+	return 0;
+}
+Problem1055
+
+#include<stdio.h>
+int main()
+{
+	int a,i,d,b,c;
+	for(i=100;i<=999;i++)
+	{
+		a=i/100;
+		b=i/10%10;
+		c=i%10;
+		d=a*a*a+b*b*b+c*c*c;
+		if(d==i)
+		{
+			printf("%d\n",i);
+		}
+
+	}
+
+	return 0;
+}
+Problem1056
+
+#include <stdio.h>
+int main()
+{
+    int n;
+	int f[100];
+	int s, x, i, count;
+	scanf("%d",&n);
+	for(x=1; x<=n; x++)
+	{
+		count = 0;
+		s = 0;
+			for(  i=1; i<x; i++)
+			{
+				if( x % i == 0)
+				{
+					s += i;
+					f[count] = i;
+					count++;
+				
+				}
+			}
+			if( s == x)
+			{
+				printf("%d its factors are ",x);
+				for(i=0;i<count; i++)
+					printf("%d ", f[i]);
+				printf("\n");
+			}
+	}
+    return 0;
+
+}
+Problem1057
+
+#include<stdio.h>
+int main()
+{
+	int a,b,i,n,m;
+	double c,sum;
+	sum=0;
+	a=1;b=2;
+	scanf("%d",&m);
+		for(n=1;n<=m;n++)
+		{
+			c=(double)b/a;
+			i=b;
+			b=a+b;
+			a=i;
+			sum=sum+c;
+
+		}
+printf("%.2lf\n",sum);
+	return 0;
+
+}
+Problem1058
+
+#include<stdio.h>
+int main()
+{
+	int N,m,i,n;
+	double sum,t;
+	n=1;sum=0;
+	scanf("%d",&m);
+	scanf("%d",&N);
+	for(i=1;i<=N;i++)
+	{
+		n=n*2;
+		sum=sum+2*(1.0*m/n);
+		t=1.0*m/n;
+
+	}
+	printf("%.2lf %.2lf\n",t,2*sum-m);
+		return 0;
+}
+Problem1059
+
+#include<stdio.h>
+int main()
+{
+	int N,day;
+	int  sum;
+	scanf("%d",&N);
+	sum=1;
+	day=1;
+	while(N!=1)
+	{
+		sum=((sum+1)*2);
+		N--;
+
+	}
+	printf("%d\n",sum);
+	return 0;
+}
+Problem1060
+
+#include <stdio.h>
+
+double mysqrt(double a)
+{
+  double x = 1.0*a/2;
+  double d = 10000;
+  while ( d>1e-5 || d<-1e-5)
+  {
+    d = x;
+    x = (x + 1.0*a/x) /2 ;
+    d -= x;
+  }
+  return x;
+}
+int main()
+{
+    double f,a;
+	scanf("%lf",&a);
+    f=mysqrt(a);
+	printf("%.3f\n",f);
+	return 0;
+}
+Problem1061
+
+#include <stdio.h>
+#include <math.h>
+int main( )
+{
+	int n,i;
+	int a;
+   scanf("%d",&a);
+
+	for( n=2;  n<=a; ++n )
+	{
+			for( i = 2; i<=sqrt(n); i++)
+				if ( n % i == 0 )
+					break;
+				if ( i>sqrt(n) ) 
+				printf("%d\n", n);
+	}
+	return 0;
+}
+
+
+Problem1062
+
+#include<stdio.h>
+    int main()
+{
+        int a[10],i,j,t;
+             
+        for(i=0;i<10;i++)
+             scanf("%d",&a[i]);
+        for(i=0;i<10;i++)
+            for(j=i+1;j<10;j++)
+                if (a[i]>a[j])   {
+                   t=a[i];    a[i]=a[j];    a[j]=t;  }
+       for(i=0;i<10;i++)      printf("%d\n",a[i]);
+	   return 0;
+}
+Problem1063
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	int d,e,f;
+	int g,h,i;
+	scanf("%d%d%d",&a,&b,&c);
+	scanf("%d%d%d",&d,&e,&f);
+	scanf("%d%d%d",&g,&h,&i);
+	printf("%d %d\n",a+e+i,c+e+g);
+         return 0;
+}
+Problem1064
+
+#include <stdio.h>
+int  main() 
+{ 
+	int b,i,j,x,N = 10;
+ int a[9] ;
+ for(b=0;b<9;b++)
+ scanf("%d",&a[b]);
+ scanf("%d",&x);
+ for(i = 0;i < N - 1;i++)
+	 if(a[i] > x)
+		 break;
+ if(i == N - 1)
+	 a[N - 1] = x; 
+ else
+ { 
+  for(j = N - 2 ;j >= i;j--) 
+	  a[j + 1] = a[j];
+  a[i] = x;
+ }
+
+ for(i = 0;i < 10;i++) 
+	 printf("%d\n",a[i]);
+ return 0;
+}
+Problem1065
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d,e,f,g,h,i,j;
+		scanf("%d%d%d%d%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j);
+	printf("%d %d %d %d %d %d %d %d %d %d\n",j,i,h,g,f,e,d,c,b,a);
+	return 0;
+}
+Problem1066
+
+#include<stdio.h>
+int g(int a,int b)
+
+{
+	int r,t;
+	if(a<b)
+	{t=a;a=b;b=t;}
+	r=a%b;
+	while(r)
+	{
+	a=b;
+	b=r;
+	r=a%b;
+	
+	}
+	return b;
+}
+
+    int main()
+	{
+		int a,b;
+		scanf("%d %d",&a,&b);
+		printf("%d %d\n",g(a,b),a*b/g(a,b));
+	return 0;
+
+}
+Problem1067
+
+/*?ó·?3ì μ??ù￡?ó?èy??oˉêy·?±e?óμ±b^2-4ac′óóú0?￠μèóú0?￠oíD?óú0ê±μ??ù￡?2￠ê?3??á1??￡′ó?÷oˉêyê?è?a?￠b?￠cμ??μ?￡*/ 
+
+#include <stdio.h>
+#include <math.h>
+ fun(double f,int b,int a)
+{
+	double  x1,x2;
+	
+	x1=(-b+sqrt(f))/2*a;
+	x2=(-b-sqrt(f))/2*a;
+
+	printf("x1=%.3lf x2=%.3lf\n",x1,x2);
+
+}
+ fun1(double f,int b,int a)
+{
+	double x1,x2;
+	x1=(-b+sqrt(f))/2*a;
+	x2=(-b-sqrt(f))/2*a;
+
+	printf("x1=%.3lf x2=%.3lf\n",x1,x2);
+
+}
+ fun2(double f,int b,int a,int c)
+{
+	double e,x;
+
+	x=sqrt(4*a*c-b*b)/(2*a);
+	e=-b*1.0/(2*a);
+	printf("x1=%.3lf+%.3lfi ",e,x);
+	
+	printf("x2=%.3lf-%.3lfi\n",e,x);
+
+}
+
+
+
+int main()
+{
+	int a,b,c;
+	double f;
+	scanf("%d%d%d",&a,&b,&c);
+    f=b*b-4*a*c;
+	if(f>0)
+		fun( f,b, a);
+	else if(f=0)
+		fun1(f,b,a);
+	else
+		fun2(f,b,a,c);
+	return 0;
+}
+Problem1068
+
+#include <stdio.h>
+int main()
+{
+	int a,i,t;
+	t=0;
+	scanf("%d",&a);
+	for(i=2;i<a;i++)
+	
+		if(a%i!=0)
+		{	
+			t++;
+		}
+		if(t==a-2)
+ 	        printf("prime\n");
+		else 
+			printf("not prime\n");
+
+		
+	
+	return 0;
+}
+Problem1069
+
+#include <stdio.h>
+int main()
+{
+	int i,t,a[3][3];
+	for(i=0;i<3;i++)
+		for(t=0;t<3;t++)
+			scanf("%d",&a[i][t]);
+	for(i=0;i<3;i++)
+	{	for(t=0;t<3;t++)
+	        printf("%d ",a[t][i]);
+			printf("\n");
+	}
+	return 0;
+}
+Problem1070
+
+#include <stdio.h>
+#include <string.h>
+    fun()
+{
+		char a[100];
+	int i,n,nul=0;
+	gets(a);
+	
+	n=strlen(a);
+		for(i=n-1;i>=0;i--)
+			if(a[i]==' ')
+				nul++;
+
+
+	for(i=n-nul-1;i>=0;i--)
+	printf("%c",a[i]);
+	printf("\n");
+
+}
+int main()
+{
+	
+	fun();
+	return 0;
+}
+Problem1071
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[50],b[50];
+		gets(a);
+	gets(b);
+	
+		puts(strcat(a,b));
+	return 0;
+}
+Problem1071
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100],b[100];
+	gets(a);
+	gets(b);
+	
+	printf("%s\n",strcat(a,b));
+
+	return 0;
+}
+Problem1072
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100],b[100];
+	int i,n,t=0;
+	gets(a);
+	n=strlen(a);
+
+	for(i=0;i<n;i++)
+		if(a[i]=='a'||a[i]=='e'||a[i]=='o'||a[i]=='i'||a[i]=='u')
+		{	b[t]=a[i];
+		t++;
+		}
+	
+		for(i=0;i<t;i++)
+		printf("%c",b[i]);
+		printf("\n");
+
+
+
+	return 0;
+}
+Problem1073
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	int i;
+	char a[9];
+	gets(a);
+	for(i=0;i<4;i++)
+	printf("%c ",a[i]);
+	printf("\n");
+
+
+	return 0;
+}
+Problem1074
+
+#include <stdio.h>
+#include <string.h>
+void fun(char a[],int n);
+int main()
+{
+	char a[100];
+	int zi,mu,kong,qi,n;
+	zi=mu=kong=qi=0;
+	gets(a);
+	n=strlen(a);
+	fun(a,n);
+
+	return 0;
+}
+
+void fun(char a[],int n)
+{
+	int i,zi,mu,kong,qi;
+	zi=mu=kong=qi=0;
+	for(i=0;i<n;i++)
+	{
+		if(a[i]>='a'&&a[i]<='z'||a[i]>='A'&&a[i]<='Z')
+			mu++;
+		else if(a[i]==' ')
+			kong++;
+		else if(a[i]>='0'&&a[i]<='9')
+			zi++; 
+
+		else 
+			qi++;
+	}
+	
+	printf("%d %d %d %d \n",mu,zi,kong,qi);
+
+}
+Problem1075
+
+#include<stdio.h>
+#define SWAP(a,b) t=b;b=a;a=t 
+int main ( )
+ {
+	 int a,b,t;  
+	 scanf("%d%d",&a,&b);
+	 SWAP(a,b); 
+	 printf("%d %d\n",a,b);
+	 return 0;
+ }
+Problem1076
+
+#include<stdio.h>
+#define yu(a,b)((a)%(b))
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d\n",yu(a,b));
+
+	return 0;
+}
+Problem1077
+
+#include<stdio.h>
+#include <math.h>
+#define S(a,b,c)   (a+b+c)/2
+#define area(S,a,b,c)  sqrt(S*(S-a)*(S-b)*(S-c))
+int main()
+
+{
+	double t,S,a,c,b;
+	scanf("%lf%lf%lf",&a,&b,&c);
+	S=S(a,b,c);
+    t=area(S,a,b,c);
+	printf("%.3lf\n",t);
+
+	return 0;
+}
+Problem1078
+
+#include <stdio.h>
+#define LEAP_YEAR(y) (y)%4==0&&(y)%100!=0?1:0||(y)%400==0?1:0
+int main()
+{
+	int y,t;
+	scanf("%d",&y);
+	t=LEAP_YEAR(y);
+	if(t==1)
+		printf("L\n");
+	else 
+		printf("N\n");
+
+
+
+	return 0;
+} 
+Problem1079
+
+#include <stdio.h>
+int main()
+{
+	float a;
+	scanf("%f",&a);
+	printf("%6.2f\n",a);
+	printf("%6.2f %6.2f\n",a,a);
+	printf("%6.2f %6.2f %6.2f\n",a,a,a);
+	return 0;
+
+}
+Problem1080
+
+#include<stdio.h>
+float max(float a,float b,float c)
+{
+	a=a>b?a:b;
+    a=a>c?a:c;
+    return(a);
+}
+int  main()
+{
+  float x,y,z,j;
+  scanf("%f%f%f",&x,&y,&z);
+ j= max(x,y,z);
+  printf("%.3f\n",j);
+  printf("%.3f\n",j);
+  return 0;
+}
+Problem1081
+
+#include<stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100];
+	int i,n;
+	gets(a);
+	n=strlen(a);
+	for(i=0;i<n;i++)
+		if(a[i]=='z')
+			a[i]='a';
+		else if(a[i]>='a'&&a[i]<='z')
+			a[i]=a[i]+1;
+	puts(a);
+
+	return 0;
+}
+Problem1082
+
+#include<stdio.h>
+    int main()
+{
+        int a[3],i,j,t;
+             
+        for(i=0;i<3;i++)
+             scanf("%d",&a[i]);
+        for(i=0;i<10;i++)
+            for(j=i+1;j<3;j++)
+                if (a[i]>a[j])   
+				{
+                   t=a[i];   
+				   a[i]=a[j];   
+				   a[j]=t;  }
+       for(i=0;i<3;i++)  
+		   printf("%d ",a[i]);
+	   printf("\n");
+	   return 0;
+}
+Problem1083
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100],b[100],c[100],d[100];
+	gets(a);
+	gets(b);
+	gets(c);
+	if (strcmp(a,b)<0)
+	{
+		strcpy(d,a);
+		strcpy(a,b);
+		strcpy(b,d);
+	}
+	else if(strcmp(a,c)<0)
+	{
+		strcpy(d,a);
+		strcpy(a,c);
+		strcpy(c,d);
+
+	}
+	else if (strcmp(b,c)<0)
+	{
+		strcpy(d,b);
+		strcpy(b,c);
+		strcpy(c,d);
+
+	}
+	puts(c);
+	puts(b);
+	puts(a);
+	return 0;
+}
+Problem1084
+
+   #include <stdio.h>
+  fun(int a[]);
+   fun(int a[]);
+int main()
+{
+	int a[10],i;
+	for(i=0;i<10;i++)
+	        scanf("%d",&a[i]);
+	
+	    fun(a);
+	
+       fun2(a);  
+	
+	return 0;
+}
+ fun(int a[])
+ {
+
+	 int i,t,n,s,d,j,k;
+	 t=a[9];
+	for(i=0;i<10;i++)
+	        if(t<a[i])
+			{
+	             n=t;t=a[i];a[i]=n;
+			}
+     s=a[0];
+    for(i=0;i<10;i++)
+
+	    if(s>a[i])
+	{
+		 d=s;s=a[i];a[i]=d;
+	}
+		
+
+    j=t;t=a[9];a[9]=j;
+	k=s;s=a[0];a[0]=k;
+	 
+  
+ }
+
+
+
+   fun2(int a[])
+ {
+	 int i;
+	 
+	 for(i=0;i<10;i++)
+		    printf("%d ",a[i]);
+
+ }
+Problem1085
+
+#include <stdio.h>
+int *p,n,m,a[100];
+void  swap(int *p, int n, int m)
+{   
+	int i,*t,b[100];
+	t=b;
+	for(i=0;i<m;i++)
+	{
+		b[i] = p[n-m+i];
+	}
+	for(i=n-1;i>=m;i--)
+	{
+		p[i] = p[i-m];
+	}
+	for(i=0;i<m;i++)
+	{
+		p[i] = b[i];
+	}
+}int main()
+{
+	int i;
+	
+    scanf("%d", &n);
+    
+    for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+ scanf("%d", &m);
+    
+	swap(a,n,m);
+    
+    for(i=0;i<n;i++)
+      printf("%d ",a[i]);
+	printf("\n");
+ return 0;
+}
+Problem1085
+
+#include <stdio.h>
+int *p,n,m,a[100];
+void  swap(int *p, int n, int m)
+{   
+	int i,b[100];
+	
+	for(i=0;i<m;i++)
+	{
+		b[i] = p[n-m+i];
+	}
+	for(i=n-1;i>=m;i--)
+	{
+		p[i] = p[i-m];
+	}
+	for(i=0;i<m;i++)
+	{
+		p[i] = b[i];
+	}
+}int main()
+{
+	int i;
+	
+    scanf("%d", &n);
+    
+    for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	scanf("%d", &m);
+    
+	swap(a,n,m);
+    
+    for(i=0;i<n;i++)
+		printf("%d ",a[i]);
+	printf("\n");
+ return 0;
+}
+Problem1086
+
+#include <stdio.h>
+int main()
+{
+    int n, m, i, s = 0;
+    scanf("%d", &n);
+    m = 3;
+    for (i = 2; i <= n; i++)
+    {
+        s = (s + m) % i;
+    }
+    printf ("%d\n", s+1);
+    return 0;
+}
+Problem1087
+
+#include <stdio.h>
+#include<string.h>
+
+int main ()
+{
+	int i,m,n;
+	char str[100]={0};
+	
+	scanf("%d",&n);
+	getchar();
+	for(i=0;i<n;i++)
+	str[i]=getchar();
+	
+	scanf("%d",&m);
+	printf("%s\n",str+m-1);
+	return 0;
+}
+Problem1088
+
+#include <iostream>
+
+using namespace std;
+struct qata
+{
+    int year;
+    int moth;
+    int day;
+};
+int is_ru(int year)
+{
+    if(year %4 == 0&& year% 100 !=0 || year %400 == 0)
+        return 1;
+    else
+        return 0;
+}
+int main()
+{
+    int mo[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+    qata q;
+    int count =0;
+    cin>>q.year>>q.moth>>q.day;
+    if(is_ru(q.year))
+        mo[2] = 29;
+    for(int i = 1; i < q.moth; i++)
+    {
+        count += mo[i];
+    }
+    count += q.day;
+    cout<<count<<endl;
+    return 0;
+}
+Problem1089
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int i,n,t,m;
+	char a[100];
+	scanf("%d",&n);
+	getchar ();
+	for(t=1;t<=n;t++)
+	{   gets(a);
+	    
+	     m=strlen(a);
+        for(i=0;i<m;i++)
+	{
+		if(a[i]!=' ')
+			printf("%c",a[i]);
+		else if(a[i]==' ') 
+		   printf(",");
+	
+	}
+		printf("\n");
+	}
+	return 0;
+}
+Problem1090
+
+#include <iostream>
+using namespace std;
+
+struct stu
+{
+    char st_num[20];
+    char st_name[20];
+    int sub_1;
+    int sub_2;
+    int sub_3;
+    int count;
+};
+int main()
+{
+    int n;
+   cin>>n;
+   stu s[100];
+   int p1,p2,p3;
+   p1 = p2 = p3 = 0;
+   for(int i = 0; i < n; i++)
+   {
+       s[i].count =0;
+       cin>>s[i].st_num;
+       cin>>s[i].st_name;
+       cin>>s[i].sub_1;
+       cin>>s[i].sub_2;
+       cin>>s[i].sub_3;
+       s[i].count = s[i].sub_1+ s[i].sub_2+s[i].sub_3;
+       p1 += s[i].sub_1;
+       p2 += s[i].sub_2;
+       p3 += s[i].sub_3;
+   }
+   p1 = p1/n;
+   p2 = p2/n;
+   p3 = p3/n;
+   cout<<p1<<" "<<p2<<" "<<p3<<endl;
+   int max = 0,id ;
+   for(int i = 0; i < n; i++)
+   {
+       if(s[i].count > max)
+       {
+           max = s[i].count;
+           id = i;
+       }
+
+   }
+   cout<<s[id].st_num<<" "<<s[id].st_name<<" "<<s[id].sub_1<<" "<<s[id].sub_2<<" "<<s[id].sub_3<<endl;
+    return 0;
+}
+Problem1091
+
+#include <iostream>
+#include <cstdlib>
+#include <algorithm>
+using namespace std;
+struct stu
+{
+    int num;
+    int count;
+};
+int cmp(stu s1,stu s2)
+{
+    return s1.num < s2.num;
+}
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    stu * s = (stu*)malloc(sizeof(stu)*(n+m));
+    for(int i =0; i < n+m; i++)
+    {
+        cin>>s[i].num>>s[i].count;
+    }
+    sort(s,s+n+m,cmp);
+    for(int i =0; i < n+m; i++)
+    {
+        cout<<s[i].num<<" "<<s[i].count<<endl;
+    }
+    return 0;
+}
+Problem1092
+
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+
+    int n;
+    int m;
+    while(cin>>n)
+    {
+        m =0;
+        char * s = (char *)malloc(sizeof(char)*20);
+        for(int i =0; i < n; i++)
+        {
+            scanf("%s",s);
+            if(strcmp(s,"bowl") == 0|| strcmp(s,"knife") ==0 ||strcmp(s,"fork") == 0 || strcmp(s, "chopsticks") ==0)
+            {
+             if(m == 0)
+             {
+                printf("%s",s);
+                m = 1;
+             }
+             else
+              printf(" %s",s);
+            }
+
+        }
+
+            cout<<endl;
+
+}
+return 0;
+}
+Problem1093
+
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
+#include <cstdio>
+using namespace std;
+struct Node
+{
+    int from;
+    int to;
+};
+int main()
+{
+
+    int n;
+    while(cin>>n)
+    {
+        int num1 = 1;
+        int num2 = 1;
+        int father1,father2 ;
+
+        Node * node = (Node *)malloc(sizeof(Node) *n);
+        for(int i =0; i < n; i++)
+           {
+               cin>>node[i].from>>node[i].to;
+               if(node[i].from == 1) father1 = node[i].to;
+               if(node[i].from == 2) father2 = node[i].to;
+           }
+
+        for(int i =1; i < n; i++)
+        {
+            if(node[i].from ==father1)
+            {
+                num1++;
+                father1 = node[i].to;
+            }
+            if(node[i].from == father2)
+            {
+                num2++;
+                father2 = node[i].to;
+            }
+        }
+       if(num1 > num2)
+       {
+           cout<<"You are my elder\n";
+       }
+       else if(num1 < num2)
+       {
+           cout<<"You are my younger\n";
+
+       }
+       else
+        cout<<"You are my brother\n";
+
+    }
+    return 0;
+}
+Problem1094
+
+
+#include <vector>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+ vector<int> v;
+ int n;
+ char a[3][12];
+ vector<int>::iterator it;
+ int p;
+ int i,j,k;
+ while(scanf("%d",&n)!=EOF)
+ {
+    v.push_back(n);
+    for(k=0;k<3;++k)
+ {
+  scanf("%d",&n);
+  v.push_back(n);
+ }
+ for(it=v.begin();it!=v.end();++it)
+ {
+  p=3*(it-v.begin());
+  switch(*it)
+  {
+  case 1:
+   a[0][p]=' '; a[0][p+1]=' '; a[0][p+2]=' ';
+   a[1][p]=' '; a[1][p+1]=' '; a[1][p+2]='|';
+   a[2][p]=' '; a[2][p+1]=' '; a[2][p+2]='|';
+   break;
+  case 2:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]=' '; a[1][p+1]='_'; a[1][p+2]='|';
+   a[2][p]='|'; a[2][p+1]='_'; a[2][p+2]=' ';
+   break;
+  case 3:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]=' '; a[1][p+1]='_'; a[1][p+2]='|';
+   a[2][p]=' '; a[2][p+1]='_'; a[2][p+2]='|';
+   break;
+  case 4:
+   a[0][p]=' '; a[0][p+1]=' '; a[0][p+2]=' ';
+   a[1][p]='|'; a[1][p+1]='_'; a[1][p+2]='|';
+   a[2][p]=' '; a[2][p+1]=' '; a[2][p+2]='|';
+   break;
+  case 5:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]='|'; a[1][p+1]='_'; a[1][p+2]=' ';
+   a[2][p]=' '; a[2][p+1]='_'; a[2][p+2]='|';
+   break;
+  case 6:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]='|'; a[1][p+1]='_'; a[1][p+2]=' ';
+   a[2][p]='|'; a[2][p+1]='_'; a[2][p+2]='|';
+   break;
+  case 7:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]=' '; a[1][p+1]=' '; a[1][p+2]='|';
+   a[2][p]=' '; a[2][p+1]=' '; a[2][p+2]='|';
+   break;
+  case 8:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]='|'; a[1][p+1]='_'; a[1][p+2]='|';
+   a[2][p]='|'; a[2][p+1]='_'; a[2][p+2]='|';
+   break;
+  case 9:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]='|'; a[1][p+1]='_'; a[1][p+2]='|';
+   a[2][p]=' '; a[2][p+1]='_'; a[2][p+2]='|';
+   break;
+  case 0:
+   a[0][p]=' '; a[0][p+1]='_'; a[0][p+2]=' ';
+   a[1][p]='|'; a[1][p+1]=' '; a[1][p+2]='|';
+   a[2][p]='|'; a[2][p+1]='_'; a[2][p+2]='|';
+  }
+ }
+ for(i=0;i<3;++i)
+ {
+  for(j=0;j<12;++j)
+   printf("%c",a[i][j]);
+  printf("\n");
+ }
+ v.clear();
+ }
+ return 0;
+}
+Problem1095
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int n,m,t;
+    vector<string> v1,v2,v3;
+    while(cin>>n>>m>>t)
+    {
+        int ok =1;
+        int ok3 = 0;
+        string a;
+        for(int i =0 ; i < n; i++)
+        {
+            cin>>a;
+            v1.push_back(a);
+        }
+        for(int i =0 ; i < m; i++)
+        {
+            cin>>a;
+            v2.push_back(a);
+        }
+        for(int i =0 ; i < t; i++)
+        {
+            cin>>a;
+            v3.push_back(a);
+        }
+        for(int i =0; i < m; i++)
+        {
+            int ok1 = 0;
+            int ok2 = 0;
+            for(int t2 = 0; t2 < n; t2++)
+            {
+                if(v2[i] == v1[t2])
+                    ok1 = 1;
+            }
+            for(int p = 0; p < t; p ++ )
+            {
+                if(v3[p] == v2[i])
+                    ok2 = 1;
+            }
+            if(ok1&&!ok2)
+            {
+                ok3 = 1;
+                if(ok)
+                {
+                    cout<<v2[i];
+                    ok = 0;
+                }
+                else
+                    cout<<" "<<v2[i];
+
+            }
+
+        }
+        if(ok3 == 0)
+        {
+            cout<<"No enemy spy";
+        }
+        cout<<endl;
+        v1.clear();
+        v2.clear();
+        v3.clear();
+
+    }
+    return 0;
+}
+Problem1098
+
+#include<stdio.h>
+int fn[30][2]={
+220,284,
+1184,1210,
+2620,2924,
+5020,5564,
+6232,6368,
+10744,10856,
+12285,14595,
+17296,18416,
+63020,76084,
+66928,66992,
+67095,71145,
+69615,87633,
+79750,88730,
+100485,124155,
+122265,139815,
+122368,123152,
+141664,153176,
+142310,168730,
+171856,176336,
+176272,180848,
+185368,203432,
+196724,202444,
+280540,365084,
+308620,389924,
+319550,430402,
+356408,399592,
+437456,455344,
+469028,486178
+};
+int main()
+{
+int a, b, i, count;
+
+while(scanf("%d%d", &a, &b) != EOF)
+{
+for(count=0, i=0; i<28; i++)
+   if(a<=fn[i][0]&&fn[i][1]<=b)
+      count++;
+      printf("%d\n",count);
+} 
+return 0;
+} 
+Problem1099
+
+
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+using namespace std;
+int can[1005]={0};
+int a[10005][605]={0};
+int x[6005],y[6005],t[6005];
+int h1,h2;
+int bb,ee,xx,yx,c,n;
+void gui(int ji,int many,int ma,int kk);
+int main()
+{
+
+      for (int i=1;i<=31;i++)
+                can[i*i]=true;
+      for (int i=1;i<=1000;i++)
+            if (!can[i])
+         {
+              a[i][600]=1;
+              bb=1;
+              ee=(int)sqrt(i);
+              a[i][0]=ee;
+              ee=-ee;
+              xx=bb;
+              yx=ee;
+              xx=-yx;
+              yx=i-yx*yx;
+              n=0;
+            while ((xx-yx)*(xx-yx)<i||xx>=0)
+        {
+                xx-=yx;
+                n++;
+        }
+           a[i][1]=n;
+          c=xx;
+          xx=yx;
+          yx=c;
+while (xx!=bb||yx!=ee)
+{
+a[i][600]++;
+c=xx;
+xx=-yx;
+yx=i-yx*yx;
+yx=yx/c;
+n=0;
+while ((xx-yx)*(xx-yx)<i||xx>=0)
+{
+xx-=yx;
+n++;
+}
+a[i][a[i][600]]=n;
+c=xx;
+xx=yx;
+yx=c;
+}
+}
+int i;
+while (scanf("%d",&i)!=EOF)
+if (!can[i])
+{
+if (a[i][600]%2)
+gui(1,a[i][0],i,a[i][600]*2);
+else
+gui(1,a[i][0],i,a[i][600]);
+for (int j=x[0];j>=1;j--)
+printf("%d",x[j]);
+printf("\n");
+}
+else
+printf("no solution\n");
+
+return 0;
+}
+void gui(int ji,int many,int ma,int kk)
+{
+if (ji<kk)
+gui(ji+1,a[ma][(ji-1)%a[ma][600]+1],ma,kk);
+else
+{
+h1=1;
+h2=1;
+x[1]=many;
+y[1]=1;
+return;
+}
+for (int i=1;i<=h1;i++)
+t[i]=x[i];
+for (int i=1;i<=h2;i++)
+x[i]=y[i];
+for (int i=1;i<=h1;i++)
+y[i]=t[i];
+c=h1;
+h1=h2;
+h2=c;
+for (int i=1;i<=h2;i++)
+if (i<=h1)
+x[i]+=many*y[i];
+else
+x[i]=many*y[i];
+if (h2>h1)
+h1=h2;
+for (int i=1;i<h1;i++)
+if (x[i]>=10)
+{
+x[i+1]+=x[i]/10;
+x[i]%=10;
+}
+while (x[h1]>=10)
+{
+x[h1+1]=x[h1]/10;
+x[h1]%=10;
+h1++;
+}
+x[0]=h1;
+}
+Problem1103
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+const int MAX = 1 << 30;
+int f[25][110][110];
+
+int main(){
+    int n, e, d;
+    cin>>n>>e>>d;
+    for (int i = 1; i <= n; i++)
+    for (int j = 0; j <= d; j++)
+    for (int k = 0; k <= e; k++) f[i][j][k] = MAX;
+    f[1][0][0] = 0;
+    for (int i = 1; i <= n; i++)
+    for (int j = 0; j <= d; j++)
+    for (int k = 0; k <= e; k++) if (f[i][j][k] != MAX) 
+    {
+        for (int p = 1; k + p * p <= e; p++)
+        f[i][j + p][k + p * p] = min(f[i][j + p][k + p * p], f[i][j][k] + 1);
+        f[i + 1][j][j] = min(f[i + 1][j][j], f[i][j][k]);
+    }
+    int ans = MAX;
+    for (int i = 0; i <= e; i++) ans = min(ans, f[n][d][i]);
+    if (ans == MAX) cout<<"0"<<endl; else cout<<ans<<endl;
+    return 0;
+}
+Problem1119
+
+#include <stdio.h>
+#include <algorithm>
+#include <string.h>
+using namespace std;
+
+struct node
+{
+    int x,y,v;
+}a[20];
+
+int dp[1005][1005];
+
+int main()
+{
+    int i,j,k,n,X,Y,t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d%d%d",&n,&X,&Y);
+        for(i = 0;i<n;i++)
+        scanf("%d%d%d",&a[i].x,&a[i].y,&a[i].v);
+        memset(dp,0,sizeof(dp));
+        for(i = 0;i<=X;i++)
+        {
+            for(j = 0;j<=Y;j++)
+            {
+                for(k = 0;k<n;k++)
+                {
+                    if(i>=a[k].x && j>=a[k].y)
+                    dp[i][j] = max(dp[i][j],max((dp[i-a[k].x][j]+dp[a[k].x][j-a[k].y]),(dp[i][j-a[k].y]+dp[i-a[k].x][a[k].y]))+a[k].v);
+                    if(i>=a[k].y && j>=a[k].x)
+                    dp[i][j] = max(dp[i][j],max((dp[i-a[k].y][j]+dp[a[k].y][j-a[k].x]),(dp[i][j-a[k].x]+dp[i-a[k].y][a[k].x]))+a[k].v);
+                }
+            }
+        }
+        printf("%d\n",dp[X][Y]);
+    }
+
+    return 0;
+}
+Problem1120
+
+#include <stdio.h>
+int main()
+{
+	int k,i=1;
+	double sn;
+	sn=0;
+	scanf("%d",&k);
+	while (sn<=k)
+	{
+		sn=sn+(double)1/i;
+		i++;
+	}
+	
+	printf("%d\n",i-1);
+	return 0;
+}
+Problem1121
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int n,k;
+int a[5000012];
+int num =0;
+
+int is_prime(int count)
+{
+    if(count <= 1 )  return 0;
+    double l = floor(sqrt(count)+0.5);
+    for(int i = 2; i <= l; i++)
+    {
+        if(count % i ==0) return 0;
+    }
+    return 1;
+}
+
+void dfs(int p, int count, int m)
+{
+    if(m == k)
+    {
+        if(is_prime(count))  num++;
+        //cout<<count<<"  ";
+    }
+    else
+    {
+        for(int i = p+1; i < n; i++)
+        {
+            dfs(i,count + a[i],m+1);
+        }
+    }
+}
+int main()
+{
+
+
+    cin>>n>>k;
+    for(int i =0; i < n; i++)  cin>>a[i];
+    for(int i =0; i < n; i++)
+    {
+
+       dfs(i,a[i],1);
+
+    }
+    cout<<num<<endl;
+    return 0;
+}
+Problem1122
+
+#include <stdio.h>
+int dg(int now);
+int a[10][10],b[10],zero[10],num[10];//记录有向图；标记是否通过；记录每个数字是否可变换为0；记录每个数字的变换结果数
+int dg(int now)//按当前节点搜索
+{
+     int i;
+     for (i=0;i<10;i++)
+         if ((a[now][i]==1)&&(b[i]==0))//判断是否有通路；只查找未标记的点
+         {
+            b[i]=1;
+            dg(i);
+         }
+}
+int main()
+{
+      int i,j,k,t,tn,x,y;
+      int n1[40]={0};
+      char n[40];
+      scanf("%s %d",&n,&k);//用字符串保存n，便于统计且足够大
+      for (i=0;i<k;i++)
+      {
+          scanf("%d%d",&x,&y);
+          a[x][y]=1;
+      }
+      for (i=0;i<10;i++)
+      {
+          for (j=0;j<10;j++) b[j]=0;//初始化数组
+          b[i]=1;//标记自己
+          dg(i);
+          zero[i]=b[0];
+          for (j=0;j<10;j++) num[i]+=b[j];//统计数字i的可能变换结果
+      }
+      n[0]=num[n[0]-48]-zero[n[0]-48];//单独处理数字0的情况
+      for (i=1;n[i]>0;i++) n[i]=num[n[i]-48];//处理数字
+      tn=i;
+      t=1;
+      n1[0]=n[0];
+      for (i=1;i<tn;i++)//高精度乘法
+      {
+          for (j=0;j<t;j++) n1[j]*=n[i];
+          for (j=0;j<t;j++)
+              if (n1[j]>9)
+              {
+                 n1[j+1]+=n1[j]/10;
+                 n1[j]%=10;
+              }
+          if (n1[t]>0) t++;
+      }
+      for (i=t-1;i>=0;i--) printf("%d",n1[i]);
+      return 0;
+}
+Problem1124
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+       char ch[1000000];
+
+       long int i, k, x = 0, y = 0, l;
+
+       for(i=0; ;i++)
+       {
+
+              scanf("%c",&ch[i]);
+              if(ch[i]=='E') break;
+       }
+       for(k=x=y=0; k<i && ch[k] != '\0' && ch[k] != 'E'; k++)
+       {
+
+              if(ch[k]=='W') x++;
+              if(ch[k]=='L') y++;
+              if((x>=11&&x-y>=2)||(y>=11&&y-x>=2))
+              {
+                     printf("%ld:%ld\n",x,y);
+                     x=y=0;
+              }
+       }
+
+       if(ch[k]=='E')  printf("%ld:%ld\n\n",x,y);
+              
+       for(k=x=y=0;k<i&&ch[k]!='\0'&&ch[k]!='E';k++)
+
+       {
+
+              if(ch[k]=='W')  x++;
+
+              if(ch[k]=='L') y++;
+
+              if((x>=21&&x-y>=2)||(y>=21&&y-x>=2))
+            {
+                     printf("%ld:%ld\n",x,y);
+                     x=y=0;
+            }
+       }
+       if(ch[k]=='E')
+
+              printf("%ld:%ld\n",x,y);
+    return 0;
+
+}
+Problem1126
+
+#include <stdio.h>
+int main()
+{      
+	int i,j,n,a[20]={0};     
+	scanf("%d",&n);     
+	a[0]=1; a[1]=1;     
+	for (i=2;i<=n;i++)    
+		for (j=0;j<i;j++)      
+			a[i]=a[i]+a[j]*a[i-j-1];  
+		printf("%d\n",a[n]);     
+		   
+		return 0;
+}
+Problem1128
+
+#include <stdio.h>
+int main()
+{
+	int n,a,b,i,sum[8]={0};
+	int sum1=0;
+	for(n=1;n<=7;n++)
+	{
+		scanf("%d %d",&a,&b);
+		sum[n]=a+b;
+		
+	
+		
+			if(sum[n]>sum1)
+			{
+				sum1=sum[n];
+
+				i=n;	
+			}
+		
+	}
+	if(sum[i]>=8)
+	printf("%d\n",i);
+	else 
+		printf("0\n");
+
+	
+	return 0;
+}
+Problem1132
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int N, grade1, grade2, num;
+    char ch1, ch2, name[ 21 ];
+    int n, max, sum, add;
+    char winner[ 21 ];
+
+    max = 0;
+    add = 0;
+    scanf( "%d", &N );
+    for ( n = 1; n <= N; n++ )
+        {
+        scanf( "%s %d %d %c %c %d", name, &grade1, &grade2, &ch1, &ch2, &num );
+
+        sum = 0;
+        if ( grade1 > 80 && num >= 1 )
+            sum += 8000;
+        if ( grade1 > 85 && grade2 > 80 )
+            sum += 4000;
+        if ( grade1 > 90 )
+            sum += 2000;
+        if ( grade1 > 85 && ch2 == 'Y' )
+            sum += 1000;
+        if ( grade2 > 80 && ch1 == 'Y' )
+            sum += 850;
+
+        add += sum;
+
+        if ( sum > max ) {
+            max = sum;
+            strcpy( winner, name );
+        }
+    }
+
+    printf( "%s\n%d\n%d\n", winner, max, add );
+
+    return 0;
+}
+Problem1142
+
+#include <iostream>
+#include <cstdio>
+#include <set>
+using namespace std;
+
+int main()
+{
+   // freopen("random.in","r",stdin);
+   // freopen("random.out","w",stdout);
+    int n;
+    int a[1000];
+    set<int > s;
+    set<int >::iterator it;
+    cin>>n;
+    for(int i =0; i < n; i++)
+    {
+        cin>>a[i];
+        s.insert(a[i]);
+    }
+    cout<<s.size()<<endl;
+    int ok = 0;
+    for(it = s.begin(); it != s.end(); it++)
+    {
+        if(ok == 0)
+        {
+            cout<<*it;
+            ok =1;
+        }
+        else
+            cout<<" "<<*it;
+    }
+    cout<<endl;
+
+    return 0;
+}
+Problem1145
+
+#include<iostream>
+using namespace std;
+int main()
+{
+     int k,m,x,sum=0,t=1;
+
+     cin>>k>>m;
+     while(m)
+     {
+         x=m&1;
+         if(x) sum+=t;
+         t*=k;
+         m=m>>1;
+     }
+     cout<<sum<<endl;   
+       return 0;
+}
+Problem1162
+
+#include<stdio.h>
+float fact(n);
+int main()
+{
+	
+	float sum;
+	
+   
+	sum=fact();
+	printf("%.f\n",sum);
+	return 0;
+}
+float fact(n)
+{
+	int m,a;
+	int sum1,sum2,sum3,i,b,c;
+	float f;
+	scanf("%d%d",&m,&a);
+	sum1=1;
+	sum2=1;
+	sum3=1;
+	for(i=1;i<=m;i++)
+		sum1=sum1*i;
+	for(b=1;b<=a;b++)
+		sum2=sum2*b;
+	for(c=1;c<=(m-a);c++)
+		sum3=sum3*c;
+	f=(float )sum1/sum2/sum3;
+	return f;
+
+}
+Problem1163
+
+#include<stdio.h>
+int main()
+{    
+	char a[1000];   
+	int b=0;    int i;   
+	for(i=0;;i++)
+	{       
+		scanf("%c",&a[i]);    
+		if(a[i]==' ')    
+		{break;}    
+		if(a[i]=='$')    
+		{
+			b=b+1;
+		}   
+ }    
+	printf("%d\n",b);
+	return 0;
+} 
+Problem1164
+
+#include<stdio.h>
+int main()
+{
+	int a[100],i,sum,n;
+	sum=0;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		if(a[i]%2==0)
+			sum=sum+a[i];
+	}
+	printf("%d\n",sum);
+
+
+
+	return 0;
+}
+Problem1165
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char f;
+	int i;
+	char a[1000];
+	scanf("%c",&f);
+	scanf("%s",a);
+
+	for(i=0;i<strlen(a);++i)
+		if(a[i]!=f)
+			printf("%c",a[i]);
+
+		printf("\n");
+	return 0;
+}
+Problem1166
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+	int i,a[100],m,g,t;
+	double y;
+
+	scanf("%d",&m);
+	for(i=0;i<m;i++)
+	{    
+		scanf("%d",&a[i]);
+
+
+		if(a[i]<-2)
+			y=a[i]*a[i]-sin(a[i]);
+		else if (a[i]>=-2&&a[i]<=2)
+		{
+			g=1;
+			for(t=1;t<=a[i];t++)
+				g=g*2;
+			y=g+a[i];
+		}
+		else if(a[i]>2)
+			y=sqrt(a[i]*a[i]+a[i]+1);
+	
+	printf("%.2lf",y);
+	printf("\n");
+	}
+	return 0;
+}
+Problem1167
+
+#include  <stdio.h>
+
+int main()
+{
+	int n,i;
+	float a[100],sum,min;
+	
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%f",&a[i]);
+    } 
+	sum=a[0],min=a[0];
+	for(i=0;i<n;i++)
+	{
+		if(a[i]>=sum)
+			sum=a[i];
+		if(a[i]<=min)
+			min=a[i];
+	}
+	printf("%.2f %.2f\n",sum,min);
+
+	return 0;
+}
+Problem1168
+
+#include<stdio.h>
+int main()
+{
+	char c;
+	int letters=0,space=0,digit=0,others=0;
+	while(   (c=getchar())    !='\n')
+	{
+		if(c>='a'&&c<='z'||c>='A'&&c<='Z')
+			letters++;
+		else if(c==' ')
+			space++;
+		else if(c>='0'&&c<='9')
+			digit++; 
+
+		else 
+			others++;
+	}
+	printf("%d %d %d %d",letters,digit,space,others);
+	return 0;
+}
+Problem1169
+
+#include<stdio.h>
+float fact(int n);
+int main()
+{
+	float sum;
+    int n;
+	
+	scanf("%d",&n);
+	sum=fact(n);
+	printf("%.4f\n",sum);
+
+	return 0;
+}
+float fact(int n)
+{
+	int a,c,b;
+	float sum=0;
+	
+	for(a=1;a<=n;a++)
+	{
+		c=1;
+		for(b=1;b<=a;b++)
+			c=c*b;
+		sum=sum+1.0/c;
+	}
+
+	return (sum);
+}
+Problem1170
+
+#include <stdio.h>
+int main()
+{
+	int a[10],n,i,sum;
+	double ad;
+	sum=0;
+	n=0;
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&a[i]);
+		sum=sum+a[i];
+	}
+	ad=1.0*sum/10;
+    for(i=0;i<10;i++)
+		if(a[i]>ad)
+			n++;
+    printf("%d\n",n);
+	return 0;
+}
+Problem1171
+
+#include <stdio.h>
+#include <math.h>
+int main( )
+{
+	int n,i;
+	int a,sum=0;
+   scanf("%d",&n);
+   scanf("%d",&a);
+   for( n=2;  n<=a; ++n )
+	{
+
+	
+			//2aê?nê?2?ê???êy
+			for( i = 2; i<=sqrt(n); i++)
+				if ( n % i == 0 )
+					break;
+			//?aà?2??éò??D?¨nê?2?ê???êy
+			if ( i>sqrt(n) )
+			{     sum=sum+n;//ê???êy
+				
+			}
+			
+   }printf("%d\n", sum);
+	return 0;
+}
+Problem1172
+
+#include <stdio.h>
+  fun(int a[]);
+   fun(int a[]);
+int main()
+{
+	int a[10],i;
+	for(i=0;i<10;i++)
+	        scanf("%d",&a[i]);
+	
+	    fun(a);
+	
+       fun2(a);  
+	
+	return 0;
+}
+ fun(int a[])
+ {
+
+	 int i,t,k;
+	 t=0;
+	for(i=0;i<10;i++)
+	        if(abs(a[t])>abs(a[i]))
+	             t=i;
+	k=a[t];
+   a[t]=a[9];
+   a[9]=k;
+	 
+  
+ }
+
+
+
+   fun2(int a[])
+ {
+	 int i;
+	 
+	 for(i=0;i<9;i++)
+		    printf("%d ",a[i]);
+	 printf("%d\n",a[9]);
+
+ }
+Problem1173
+
+#include <math.h>
+#include <stdio.h>
+
+double fact(int n)
+{
+    double fa =1;
+    while(n>0)
+    {
+        fa *= n;
+        n--;
+    }
+    return fa;
+}
+int main()
+{
+    int n,i;
+    double sum =0;
+    double x;
+    scanf("%lf %d",&x,&n);
+    for( i = 1; i <= n; i++)
+    {
+        sum += ( pow(-1,i+1) * pow(x,i) / fact(i));
+    }
+    printf("%.4lf\n",sum);
+    return 0;
+}
+Problem1174
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int x;
+	double y;
+	scanf("%d",&x);
+	if(x<0)
+		y=fabs(x);
+	else if (x>=0&&x<2)
+		y=sqrt(x+1);
+	else if(x>=2&&x<4)
+		y=pow(x+2,5);
+	else if (x>=4)
+		y=2*x+5;
+	printf("%.2lf\n",y);
+	return 0;
+}
+Problem1175
+
+#include <stdio.h>
+    ctof(  int c , int f)
+	{
+        for(c=-100;c<=150;c+=5)
+		{	f = 32 + c* 9/5;
+		printf("c=%d->f=%d\n",c,f);}
+
+	}
+int main()
+{
+	int c,f;
+    ctof(c,f);
+    
+	return 0;
+
+}
+Problem1176
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{     int a[10][10];
+	int row,let,n,max;
+	int p,q;
+	scanf("%d",&n);
+	for(row=1;row<=n;row++)
+
+		for(let=1;let<=n;let++)
+
+		{
+			scanf("%d",&a[row][let]);
+		       
+		}
+		max=a[1][1];
+		p=0;q=0;
+    for(row=1;row<=n;row++)
+		for(let=1;let<=n;let++)
+		{       
+			if(fabs(max)<=fabs(a[row][let]))
+			{
+				  q=let;
+				  p=row;
+			      
+				 
+			    
+			}
+		}
+     printf("%d %d %d\n",a[p][q],p,q);
+
+	
+	return 0;
+}
+Problem1177
+
+#include<stdio.h>
+int main()
+{
+	int a,gooder,passer,loser;
+	gooder=0;
+	passer=0;
+	loser=0;
+	scanf("%d",&a);
+	if(a<=0)
+	return 0;
+	else
+	{
+		while (a>0)
+		{
+			if(a>=85)
+				gooder++;
+			else if(a>=60&&a<=84)
+				passer++;
+			else if (a<60&&a>0)
+				loser++;
+			scanf("%d",&a);
+
+		}
+		printf(">=85:%d\n",gooder);
+		printf("60-84:%d\n",passer);
+		printf("<60:%d\n",loser);
+	}
+
+	return 0;
+
+}
+Problem1178
+
+#include <stdio.h>
+double fact(int k)
+{
+	double s=1,i;
+	double sum=0;
+	for(i=1;i<=k;i++)
+	{
+		s=s*i;
+     	sum=sum+1.0/s;
+	}
+	return sum;
+
+}
+int main()
+{
+	int k;
+	
+	scanf("%d",&k);
+	printf("sum=%.5lf\n",fact(k));
+	return 0;
+}
+Problem1179
+
+#include<stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	printf("%o\n",a);
+	return 0;
+
+}
+Problem1180
+
+#include<stdio.h>
+int main()
+{
+    double c,f;
+	scanf("%lf",&f);
+	c=5*(f-32)/9;
+	printf("%.2lf\n",c);
+	return 0;
+}
+Problem1181
+
+#include<stdio.h>
+int main()
+{
+	int x;
+	double y;
+		
+	scanf("%d",&x);
+	if(x<1)
+		y=x;
+	else if(x>=1&&x<10)
+		y=2*x-1;
+	else if(x>=10)
+		y=3*x-11;
+	printf("%.2lf\n",y);
+
+return 0;
+}
+Problem1182
+
+#include<stdio.h>
+int main()
+{
+	int a,i,sum;
+	int b[10];
+	sum=0;
+	scanf("%d",&a);
+	for(i=1;i<=a;i++)
+	{
+		scanf("%d",&b[i]);
+		if(b[i]%2==0)
+			sum=sum+b[i];
+	}
+	printf("%d\n",sum);
+	
+	return 0;
+}
+Problem1183
+
+#include<stdio.h>
+int main()
+{
+	int n,sum;
+	scanf("%d",&n);
+	sum=n*2+n*(n-1)*3/2;
+	printf("%d\n",sum);
+	return 0;
+
+}
+Problem1184
+
+#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+for(a=10;a<=1000;a++)
+{
+	b=a%2;
+    c=a%3;
+     d=a%7;
+
+	if(b==0&&c==0&&d==0)
+		printf("%d\n",a);
+}
+        return 0;
+}
+Problem1185
+
+#include<stdio.h>
+int main()
+{
+	int a[20],nul,i,sum,nul1;
+	double t;
+	
+	sum=0;
+	nul=nul1=0;
+	for(i=0;i<20;i++)
+	{
+		scanf("%d",&a[i]);
+		if(a[i]<0)
+			nul++;
+		else  if(a[i]>0)
+		
+		{
+			sum=sum+a[i];
+		nul1++	;
+		}
+
+	}
+	t=(double)sum/nul1;
+	printf("%d\n",nul);
+	printf("%.2lf\n",t);
+
+
+	return 0;
+}
+Problem1186
+
+#include<stdio.h>
+int g(int a,int b)
+
+{
+	int r,t;
+	if(a<b)
+	{t=a;a=b;b=t;}
+	r=a%b;
+	while(r)
+	{
+	a=b;
+	b=r;
+	r=a%b;
+	
+	}
+	return b;
+}
+
+    int main()
+	{
+		int a,b;
+		scanf("%d %d",&a,&b);
+		printf("%d\n%d\n",g(a,b),a*b/g(a,b));
+	return 0;
+
+}
+Problem1187
+
+#include<stdio.h>
+int main()
+{
+	char c;
+	int letters=0,space=0,digit=0,others=0;
+	while(   (c=getchar())    !='\n')
+	{
+		if(c>='a'&&c<='z'||c>='A'&&c<='Z')
+			letters++;
+		else if(c==' ')
+			space++;
+		else if(c>='0'&&c<='9')
+			digit++; 
+
+		else 
+			others++;
+	}
+	printf("%d\n%d\n%d\n%d\n",letters,space,digit,others);
+	return 0;
+}
+Problem1188
+
+  #include<stdio.h>
+
+  int main()
+{
+    double sn,h;
+    int m; 
+ double s;
+
+     sn=0; 
+     h=1;
+     m=1;
+ while(m<=30)
+ {
+    h=h*m;
+
+     sn=sn+h;
+        m=m+1;
+     }
+ s = sn;
+  printf("%.2e\n",s);
+  
+  return 0;
+ 
+   }
+Problem1189
+
+#include<stdio.h>
+int main()
+{
+	int i,a,b,c;
+	for(i=100;i<=999;i++)
+	{
+		a=i/100;
+		b=i/10%10;
+		c=i%10;
+		c=a*a*a+b*b*b+c*c*c;
+           if(c==i)
+		   {
+			   printf("%d\n",i);
+		   }
+
+		
+	}
+	return 0;
+}
+Problem1190
+
+#include<stdio.h>
+#include<math.h>
+
+int isprime(int n)
+{
+int i;
+for(i=2; i<=sqrt(n); i++)
+{
+if(n%i == 0)
+{
+return 0;
+}
+if(i>sqrt(n))
+{
+	return 1;
+}
+}
+return 1;
+}
+
+int main()
+{
+	int i,m;
+
+	scanf("%d",&m);
+
+for(i=2; i<=sqrt(m); i++)
+	{
+		if(m%i == 0)
+		{
+			if(isprime(i))
+			{
+				printf("%d ",i);
+				m /= i;
+				i = 1;
+			}
+			
+		}
+		
+	}
+	if(i>sqrt(m))
+	{
+		printf("%d ",m);
+	}
+	return 0;
+}
+
+Problem1191
+
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	for(b=1;b<=9;b++)
+		for(a=1;a<=9;a++)
+			for(c=1;c<=9;c++)
+			{
+				if(b*10+a*100+c+b*10+c*100+a==1333)
+				{
+					printf("%d+%d=%d\n",b*10+a*100+c,b*10+c*100+a,1333);
+				}
+			}
+
+	return 0;
+}
+Problem1192
+
+#include<stdio.h>
+int main()
+{
+	int row,col,a;
+	int i=1;
+	scanf("%d",&a);
+	for(row=1;row<=a;row++)
+	{
+		for(col=1;col<=a-row;col++)
+			printf(" ");
+		for(col=1;col<=2*row-1;col++)
+			printf("*");
+		printf("\n");
+	}
+
+
+	return 0;
+}
+Problem1193
+
+#include <stdio.h>
+int main()
+{
+	int sum=0,m;
+	int i,t,a[100],n=0;
+	for(i=2;i<=1000;i++)
+	{   sum=0;n=0;
+		for(t=1;t<i;t++)
+		{
+			if(i%t==0)
+			{	a[n]=t;
+			    n++;
+			}
+
+		}
+		for(m=0;m<n;m++)
+			sum+=a[m];
+		if(sum==i)
+		{
+			printf("%d=",i);
+		    for(m=0;m<n;m++)
+				if(m==0)
+				{printf("%d",a[m]);}
+				else 
+					printf("+%d",a[m]);
+
+			
+		    printf("\n");
+		}
+	}
+	return 0;
+}
+Problem1194
+
+#include<stdio.h>
+
+int main()
+{
+
+
+
+	double s;
+	int a;
+	double pi=3.1415926;
+	for(a=1;a<=10;a++)
+	{     s=pi*a*a;
+	     if(s>=40&&s<=90)
+		  printf("r=%d area=%.2lf\n",a,s);
+	}
+	return 0;
+}
+Problem1195
+
+#include<stdio.h> 
+int main() 
+{ 
+    int i,j,a[10],m,n,s; 
+    for (i=0;i<10;i++) 
+    { 
+        scanf("%d",&a[i]); 
+    } 
+    for(m=0;m<9;m++) 
+        for(n=0;n<9-m;n++) 
+        { 
+            if(a[n]>a[n+1]) 
+            { 
+              s=a[n]; 
+              a[n]=a[n+1]; 
+              a[n+1]=s; 
+            } 
+        } 
+        for(j=0;j<10;j++) 
+            printf("%d\n",a[j]); 
+    return 0; 
+} 
+Problem1196
+
+#include <stdio.h>
+int main()
+{
+	int t,a[25],i,nul=0;
+	for(i=0;i<20;i++)
+		scanf("%d",&a[i]);
+     for(i=0;i<20;i++)
+	 {    nul=0;
+		 for(t=0;t<20;t++)
+		 { 
+			 if(a[i]%a[t]==0)
+				nul++;
+		 }
+		 if(nul>1)
+			 printf("%d\n",a[i]);
+	 }
+	return 0;
+}
+Problem1197
+
+#include <stdio.h>
+int main()
+{
+	int a[3][3],i,t;
+	for(i=0;i<3;i++)
+		for(t=0;t<3;t++)
+			scanf("%d",&a[i][t]);
+	printf("%d\n",a[0][0]+a[1][1]+a[2][2]);
+	
+	return 0;
+}
+Problem1198
+
+#include<stdio.h>
+int main()
+{
+	int a[6],b[8],i,n;
+	for(i=0;i<6;i++)
+		scanf("%d",&a[i]);
+	for(n=0;n<8;n++)
+		scanf("%d",&b[n]);
+	for(i=0;i<6;i++)
+		for(n=0;n<8;n++)
+			if(a[i]==b[n])		
+				printf("%d\n",a[i]);
+ return 0;
+	
+}
+Problem1200
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cstdio>
+using namespace std;
+struct Node
+{
+    int a;
+    int b;
+    double bi;
+};
+int cmp(Node a,Node b)
+{
+    return a.bi > b.bi;
+}
+int main()
+{
+   int n,m;
+   vector<Node> v;
+   while(cin>>n>>m && n !=0 || m != 0)
+   {
+       for(int i =0; i < n; i++)
+       {
+           Node node;
+           cin>>node.a>>node.b;
+           node.bi =double( node.b *1.0/ node.a);
+           //cout<<node.bi<<endl;
+           v.push_back(node);
+       }
+       sort(v.begin(),v.end(),cmp);
+       double sum = 0;
+       for(int i =0; i < n; i++)
+       {
+           //cout<<v[i].bi<<endl;
+           if(m >= v[i].a)
+           {
+               sum +=  v[i].b;
+               m -= v[i].a;
+           }
+           else
+           {
+               sum += (m * v[i].bi);
+               break;
+           }
+       }
+       printf("%.2lf\n",sum);
+       v.clear();
+   }
+    return 0;
+}
+Problem1201
+
+#include <stdio.h>
+int d[65];
+int main()
+{
+ int i,j=1,s;
+ for(i=0;i<62;i+=++j)
+  d[i]=1;
+ int month,day;
+ while(scanf("%d/%d",&month,&day),month+day)
+ {
+  s=0;
+  if(month<7)
+   s=10;
+  else if(month==7)
+  {
+   for(i=day-1;i<62;i++)
+    s+=d[i];
+  }
+  else if(month==8)
+  {
+   for(i=day+30;i<62;i++)
+    s+=d[i];   
+  }
+  else
+   s=0;
+  printf("%d\n",s);
+ }
+    return 0;
+}
+Problem1202
+
+#include<stdio.h>
+int main()
+{
+    int a,b,x,y;
+    while(1)
+    {scanf("%d%d",&a,&b);
+    if(a==0&&b==0)
+        return 0;
+    if(b%2||4*a<b||b<2*a)
+        printf("Error\n");
+    else
+    {x=b/2-a;
+    y=2*a-b/2;
+    printf("%d %d\n",y,x);}
+ 
+    }
+	return 0;
+}
+Problem1203
+
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int cmp(const void *a,const void*b)
+{
+    return *(int*)b-*(int*)a;
+}
+int n;
+void inti(int a[])
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    qsort(a,n,sizeof(int),cmp);
+}
+int main()
+{
+    int i,j,ans,k;
+    int a[1005],b[1005];
+	int cnt=0,flag;
+    while(scanf("%d",&n)!=EOF&&n)
+    {
+        inti(a);
+        inti(b);
+		cnt=0;
+		flag=0;
+        for(i=0;i<n&&b[i]>a[0];i++);
+        for(ans=-200*n;i<n;i++)
+        {
+            cnt=0;
+            for(k=0,j=i;j<n;j++,k++)
+            {
+                if(a[k]>b[j])
+                    cnt++;
+            }
+			//printf("cnt=%d\n",cnt);
+            if(cnt>n/2)
+			{
+				flag=1;
+				break;
+			}
+        }
+		if(flag==1)puts("YES");
+        else puts("NO");
+    }
+    return 0;
+}
+Problem1203
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int N;
+
+	while (cin >> N && N)
+	{
+		int speech;
+		vector<int> yuanzi;
+		vector<int> opponent;
+
+		int i;
+		for (i = 0; i < N; ++i)
+		{
+			cin >> speech;
+			yuanzi.push_back(speech);
+		}
+
+		for (i = 0; i < N; ++i)
+		{
+			cin >> speech;
+			opponent.push_back(speech);
+		}
+
+		sort(yuanzi.begin(), yuanzi.end());
+		sort(opponent.begin(), opponent.end());
+
+		int x = 0;
+		int ys = 0, ye = N-1, os = 0, oe = N-1;
+		while(ys<=ye)
+		{
+			if(yuanzi[ye] > opponent[oe])
+			{
+				ye--;
+				x++;
+			}
+			else
+			{
+				ys++;
+			}
+			oe--;
+		}
+		if (x > N/2)
+			cout << "YES" << endl;
+		else
+			cout << "NO" << endl;
+	}
+	return 0;
+}
+Problem1204
+
+#include <iostream>
+#include <queue>
+#include <cstring>
+using namespace std;
+struct Node
+{
+    int x;
+    int y;
+};
+char map[100][100];
+int flag[100][100] = {0};
+int dx[] = {0,-1,0,1};
+int dy[] = {-1,0,1,0};
+int n,m,T;
+Node s,p;
+void scan_map()
+{
+    for(int i = 0; i < m; i++)
+        for(int t =0; t < n; t++)
+    {
+        cin>>map[i][t];
+        if(map[i][t] == 'S')
+            {s.x = i;s.y = t;}
+        if(map[i][t] == 'P')
+            {p.x = i; p.y = t;}
+    }
+}
+void  fin_g()
+{
+    queue<Node> q;
+    q.push(s);
+    while(!q.empty())
+    {
+        int x,y;
+
+        Node node = q.front();  q.pop();
+        x = node.x;
+        y = node.y;
+
+        if(x == p.x && y == p.y)  break;
+        else
+        {
+            for(int i =0; i < 4; i++)
+            {
+                int new_x,new_y;
+                new_x = x + dx[i];
+                new_y = y + dy[i];
+                if(new_x >= m || new_x < 0||new_y >= n||new_y < 0)  continue;
+
+                if(map[new_x][new_y] != '*' && !flag[new_x][new_y])
+                {
+                    flag[new_x][new_y] = flag[x][y] +1;
+                    node.x = new_x;
+                    node.y = new_y;
+                    q.push(node);
+                }
+            }
+        }
+    }
+
+}
+void prin_map()
+{
+    for(int i = 0; i < m; i++)
+        {for(int t =0; t < n; t++)
+
+          cout<<map[i][t]<<" ";
+          cout<<endl;
+        }
+}
+int main()
+{
+
+    while(cin>>n>>m>>T && n !=0 || m != 0||T != 0)
+    {
+    memset(flag,0,sizeof(flag));
+    scan_map();
+    fin_g();
+    if(flag[p.x][p.y] == 0)  cout<<"NO\n";
+    else if(flag[p.x][p.y] > T) cout<<"NO\n";
+    else cout<<"YES\n";
+    
+    }
+    return 0;
+}
+Problem1205
+
+#include <stdio.h>
+#include <math.h>
+int isprime(int );
+int main()
+{
+	int a,i,c;
+	while (scanf("%d",&a),a!=0)
+	{  c=0;
+		for(i=2;i<=a;i++)
+			if(isprime(i))
+				c++;
+			printf("%d\n",c);
+
+	}
+	return 0;
+}
+int isprime(int x)
+{
+	int t;
+	double k;
+	if(x==1)
+     return 0;
+	k=sqrt(x);
+	for(t=2;t<=k;t++)
+	{
+		if(x%t==0)
+			return 0;
+	}
+	return 1;
+}
+Problem1206
+
+#include <stdio.h>
+ 
+int v[44]={1,1,2};
+int main()
+{
+    int a,i;
+    for(i=3;i<=41;++i)
+    v[i]=v[i-1]+v[i-2];
+    while(~scanf("%d",&a),a){
+    printf("%d\n",v[a]);}
+    return 0;
+}
+Problem1206
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a[100000]={0,1,2};
+    for(int i =3; i < 100000; i++)
+    {
+        a[i] = a[i-1]+ a[i-2];
+    }
+    int n;
+    while(cin>>n &&n)
+    {
+        cout<<a[n]<<endl;
+    }
+
+}
+Problem1206
+
+#include <iostream>
+
+using namespace std;
+int num;
+void dfs(int count,int m)
+{
+    if(count == m ) num++;
+    if(count > m) return;
+    else
+    {
+        dfs(count+1,m);
+        dfs(count+2,m);
+    }
+}
+int main()
+{
+    int n;
+    while(cin>>n && n!=0)
+    {
+        num =0;
+        dfs(0,n);
+        cout<<num<<endl;
+    }
+    return 0;
+}
+Problem1207
+
+ #include <stdio.h>
+   int main()
+   {
+    int i;
+    char B[] = {"ECFAJKLBDGHIVWZYMNOPQRSTUX"};
+    char b[] = {"erwqtyghbnuiopsjkdlfazxcvm"};
+    char c;
+    while((c = getchar()) != '#')
+    {
+        if(c == '\n')
+          printf("\n");
+        if(c >= 'A'&&c <= 'Z')
+        {
+            i = c - 65;
+            printf("%c", B[i]);
+        }
+        if(c >= 'a'&&c <= 'z')
+        {
+            i = c - 97;
+            printf("%c", b[i]);
+        }
+        if(c == ' ')
+          printf(" ");
+    }
+    return 0;
+}
+Problem1208
+
+#include <stdio.h> 
+#include <string.h> 
+#define LEN 1000+10 
+void turn_right(char *c,int *a,int k)//顺时针旋转 
+{ 
+    int i; 
+    char temp; 
+    temp=c[a[k-1]]; 
+    for(i=0;i<k-1;i++) 
+        c[a[k-1-i]]=c[a[k-2-i]]; 
+    c[a[0]]=temp; 
+} 
+void turn_left(char *c,int *a,int k)//逆时针旋转 
+{ 
+    int i; 
+    char temp; 
+    temp=c[a[0]]; 
+    for(i=0;i<k-1;i++) 
+        c[a[i]]=c[a[i+1]]; 
+    c[a[k-1]]=temp; 
+} 
+char c[LEN]; 
+int a[LEN][LEN]={0}; 
+int main() 
+{ 
+    int len; 
+    int i,j,k=0; 
+    for(i=1;i<=1000;i++) 
+    {// 这里把1-n的所有倍数都处理出来，不用每次循环都求，节省时间
+        k=0;
+        for(j=0;j<1000;j++) 
+        {
+            if((j+1)%i==0) 
+                 a[i][k++]=j; 
+        }
+    }
+    while(gets(c)) 
+    { 
+        len=strlen(c); 
+        for(i=len;i>=1;i--) 
+        {
+            k=len/i;
+            if(k==1) 
+                continue; 
+            if(i%2==0) 
+                turn_right(c,a[i],k); 
+            else
+                turn_left(c,a[i],k); 
+        } 
+        puts(c); 
+    } 
+    return 0; 
+}
+Problem1211
+
+#include<stdio.h>
+#include<string.h>
+char str[100][100];
+int com(int t,int x)
+{
+    int n,m,i;
+    n=strlen(str[t]);
+    m=strlen(str[x]);
+    n=(n>m)?m:n;
+    for(i=0;i<n;i++)
+    {
+        if(str[t][i]!=str[x][i])
+        return 1;
+    }
+    return 0;
+}
+int main()
+{
+    int t,leap,i;
+    t=0;
+    leap=0;
+	int cas=0;
+    while(gets(str[t])!=NULL)
+    {
+
+        if(str[t][0]=='9')
+        {
+			cas++;
+
+            if(leap)
+                printf("Set %d is not immediately decodable\n",cas);
+            else
+                printf("Set %d is immediately decodable\n",cas);
+            t=0;
+            leap=0;
+            continue;
+        }
+        for(i=0;i<t;i++)
+        {
+            if(com(t,i)==0)
+            {
+                leap=1;
+            }
+        }
+        t++;
+    }
+    return 0;
+}
+Problem1211
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int p =1;
+    string a;
+    vector<string> v;
+    while(cin>>a)
+    {
+
+
+        int ok =0;
+        v.push_back(a);
+        string::size_type position;
+        for(int i =0; i < v.size(); i++)
+        {
+            for(int t =0; t < v.size(); t++)
+            {
+                if(t == i)  continue;
+                position = v[t].find(v[i]);
+                if(position == 0) ok =1;
+
+            }
+        }
+
+
+        if(a == "9")
+        {
+            //for(int i =0; i < v.size(); i++)  cout<<v[i]<<" ";
+            if(ok == 0)   cout<<"Set "<<p<<" is immediately decodable"<<endl;
+            else  cout<<"Set "<<p<<" is not immediately decodable"<<endl;
+            v.clear();
+            ok = 0;
+            ++p;
+        }
+        a.clear();
+
+    }
+    return 0;
+}
+Problem1218
+
+#include <iostream>
+#include <cstring>
+#include <queue>
+#include <cstdio>
+using namespace std;
+struct Node
+{
+    int x;
+    int y;
+};
+int n,m;
+char map[110][110];
+int flag[110][110];
+Node s,t;
+int dx[] = {-1,0,1, 0};
+int dy[] = { 0,1,0,-1};
+void scan_map()
+{
+
+    cin>>n>>m;
+    //getchar();
+    for(int i = 0; i < n; i++)
+        for(int t2 =0; t2 < m; t2++)
+         {
+             cin>>map[i][t2];
+             if(map[i][t2] == 'S')
+             {
+                 s.x = i; s.y = t2;
+             }
+             if(map[i][t2] == 'E')
+             {
+                 t.x = i; t.y = t2;
+             }
+
+         }
+}
+void Bfs()
+{
+    queue<Node> q;
+    q.push(s);
+    Node node;
+    while(!q.empty())
+    {
+        Node cur = q.front(); q.pop();
+        if(cur.x == t.x && cur.y == t.y) break;
+        for(int i =0; i < 4; i++)
+        {
+            int x = cur.x + dx[i];
+            int y = cur.y + dy[i];
+            if(x >= n || x < 0 || y >= m || y < 0)  continue;
+            if(map[x][y] == '#') continue;
+            if(flag[x][y]!=0)  continue;
+            flag[x][y] = flag[cur.x][cur.y] + 1;
+            node.x = x; node.y = y;
+            q.push(node);
+        }
+
+    }
+}
+int main()
+{
+    int n2;
+    cin>>n2;
+    while(n2--)
+    {
+        memset(flag,0,sizeof(flag));
+        memset(map,0,sizeof(map));
+        scan_map();
+
+        Bfs();
+        if(flag[t.x][t.y] == 0)
+            cout<<"-1"<<endl;
+        else
+            cout<<flag[t.x][t.y]<<endl;
+
+
+    }
+    return 0;
+}
+Problem1219
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int s,d;
+	int res;
+	while(cin>>s && cin>>d)
+	{
+		if(d>4*s)res=10*s-2*d;
+		else if(2*d>3*s)res=8*s-4*d;
+		else if(3*d>2*s)res=6*(s-d);
+		else if(4*d>s)res=3*(s-3*d);
+		else res=-1;
+		if(res<0)cout<<"Deficit"<<endl;
+		else cout<<res<<endl;
+	}
+	return 0;
+}
+Problem1223
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int n;
+    long long x,y,i;
+    cin>>n;
+    while(n--)
+    {
+        long long sum=0;
+        cin>>x>>y;
+        if(x==y)
+            cout<<"0"<<endl;
+        else if(y-x==1)
+            cout<<1<<endl;
+        else
+        {
+            long long s=y-x;
+            for(i=2;; i++)
+            {
+                if(i%2==0)
+                {
+                    if(s>=i&&s<=((i/2)*(1+i/2)))
+                    {
+                        cout<<i<<endl;
+                        break;
+                    }
+                }
+                else
+                {
+                    if(s>=i&&s<=(1+i/2)*(1+i/2))
+                    {
+                        cout<<i<<endl;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+Problem1226
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,m;
+
+    while(cin>>n>>m && n != 0 || m != 0)
+    {
+        int c =0,ans =0;
+        for(int i =9; i >= 0; i--)
+        {
+            c = (n % 10 + m % 10 +c) > 9 ? 1 : 0;
+            ans += c;
+            n /= 10;
+            m /= 10;
+        }
+        if(ans == 0)  cout<<"No carry operation."<<endl;
+        else
+        {
+            if(ans > 1)
+            cout<<ans<<" carry operations."<<endl;
+            if(ans == 1)
+            cout<<ans<<" carry operation."<<endl;
+
+        }
+
+    }
+    return 0;
+}
+Problem1231
+
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int n;
+int a[3000];
+int b[3000];
+
+void input()
+{
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+}
+bool isJolly()
+{
+    int i,j;
+    for(i=0;i<n-1;i++)
+        b[i]=abs(a[i+1]-a[i]);
+    sort(b,b+n-1);
+    for(i=1,j=0;i<=n-1;i++)
+        if(b[j++]!=i) return false;
+    return true;
+}
+int main()
+{
+    while(cin>>n)
+    {
+        input();
+        if(isJolly()) cout<<"Jolly"<<endl;
+        else cout<<"Not jolly"<<endl;
+    }
+    return 0;
+}
+Problem1232
+
+#include <stdio.h>
+#include <iostream>
+#include <string.h>
+#include <string>
+
+#include <algorithm>
+#include <math.h>
+
+using namespace std;
+
+const int kMAX=55;
+bool dp[kMAX*2][kMAX*450];
+int value[2*kMAX];
+
+int main()
+{
+
+  int n;
+
+  scanf("%d",&n);
+
+      int total=0;
+      memset(dp,false,sizeof(dp));
+      for(int i=0;i<n;++i)
+      {
+          scanf("%d",&value[i]);
+          total+=value[i];
+      }
+
+        int half=total>>1,idx=(n+1)/2;
+        for(int i=0;i<=idx;++i)dp[i][0]=true;
+        for(int i=0;i<n;++i)
+        {
+            for(int j=0;j<idx;++j)
+            {
+                for(int k=0;k+value[i]<=half;++k)
+                    if(dp[j][k] && !dp[j+1][k+value[i]])
+                        dp[j+1][k+value[i]]=true;
+            }
+        }
+
+        int ans=half;
+        while(!dp[idx][ans]) --ans;
+
+        int tmp=total-ans;
+        if(ans>tmp)
+            swap(ans,tmp);
+        printf("%d %d\n",ans,tmp);
+
+
+  return 0;
+}
+Problem1234
+
+#include <iostream>
+#include <cstring>
+#include <cstdio>
+#include <ctype.h>
+using namespace std;
+
+int main()
+{
+    char s[100000];
+    char a[100000];
+    while(cin.getline(s,100000))
+    {
+
+        int g =0;
+        memset(a,'0',sizeof(a));
+        for(int i =0; i <strlen(s); i++)
+        {
+            if(isalnum(s[i]))
+            {
+                a[g++]=toupper(s[i]);
+            }
+
+        }
+
+       if(strstr(a,"SALT"))   puts(s);
+
+
+    }
+    return 0;
+}
+Problem1234
+
+#include <iostream>
+#include <cstring>
+#include <cstdio>
+#include <ctype.h>
+using namespace std;
+
+int main()
+{
+    char s[100000];
+    char a[100000];
+    while(cin.getline(s,100000))
+    {
+
+        int g =0;
+        memset(a,'0',sizeof(a));
+        for(int i =0; i <strlen(s); i++)
+        {
+            if(isalnum(s[i]))
+            {
+                a[g++]=toupper(s[i]);
+            }
+
+        }
+
+       if(strstr(a,"SALT"))   puts(s);
+
+
+    }
+    return 0;
+}
+Problem1235
+
+#include <iostream>
+
+using namespace std;
+string a;
+int judge(int t)
+{
+   if((a[t] =='s'||a[t] == 'S')
+      &&(a[t+1] =='a'||a[t+1] == 'A')
+      &&(a[t+2] =='l'||a[t+2] == 'L')
+      &&(a[t+3] =='t'||a[t+3] == 'T'))
+   {
+       return 1;
+   }
+   else
+    return 0;
+}
+int main()
+{
+
+    while(getline(cin,a))
+    {
+        for(int i= 0; i < a.size(); i++)
+        {
+            if(judge(i))
+             {
+                cout<<"soy sauce";
+                i+=4;
+             }
+             if(i < a.size()) cout<<a[i];
+
+        }
+        cout<<endl;
+        a.clear();
+    }
+    return 0;
+}
+Problem1236
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+struct peo
+{
+    string name;
+    double weight;
+    char s;
+};
+int cmp(peo a,peo b)
+{
+    return a.weight>b.weight;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    vector<peo> s_m;
+    vector<peo> s_f;
+    while(n--)
+    {
+        peo p;
+        cin>>p.name>>p.weight>>p.s;
+        if(p.s == 'M') s_m.push_back(p);
+        if(p.s == 'F')  s_f.push_back(p);
+
+    }
+    sort(s_m.begin(),s_m.end(),cmp);
+    sort(s_f.begin(),s_f.end(),cmp);
+    for(int i =0 ; i < 5; i++)
+    {
+        cout<<s_m[i].name<<endl;
+    }
+    for(int i =0 ; i < 5; i++)
+    {
+        cout<<s_f[i].name<<endl;
+    }
+
+
+
+
+    return 0;
+}
+Problem1237
+
+#include <iostream>
+
+using namespace std;
+int N;
+int num =0;
+void dfs(int m)
+{
+    if(m == N) {num++;}
+    else
+    {
+        for(int i =1; i <= 2; i++)
+        {
+            if(m + i > N) break;
+            dfs(m+i);
+        }
+    }
+
+
+
+}
+int main()
+{
+    while(cin>>N)
+    {
+        num =0;
+        for(int i =1; i <= 2; i++)
+        {
+            dfs(i);
+        }
+        cout<<num<<endl;
+    }
+    return 0;
+}
+Problem1238
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int is_prime(int m)
+{
+    int n = floor(sqrt(m) +0.5);
+    for(int i =2; i <= n; i++)
+    {
+        if(m % i ==0 )
+            return 0;
+    }
+    return 1;
+}
+int main()
+{
+    int n =0;//2000000000
+
+    while(cin>>n)
+    {
+       int max = -10000000;
+       int x,y;
+          for(int i =2; i <= n  ; i++)
+          {
+
+              if(is_prime(i)&& is_prime(n-i))
+              {
+                  if(i * (n-i) > max) {max= i*(n-i);x =i;y =n-i;}
+              }
+          }
+          cout<<x<<" "<<y<<endl;
+       }
+
+
+
+
+    return 0;
+}
+Problem1240
+
+#include <iostream>
+#include <vector>
+#include <cstdio>
+using namespace std;
+struct xi
+{
+    double a;
+    double b;
+    double bi;
+    int num;
+};
+int cmp(xi a,xi b)
+{
+    return a.bi > b.bi;
+}
+int main()
+{
+    double  all;
+    int s =0;
+    cin>>all;
+    vector<xi> v;
+    for(int i =0; i < 4; i++)
+    {
+        xi x;
+        cin>>x.a>>x.b;
+        x.bi = x.a*1.0/x.b;
+        x.num = 1;
+        v.push_back(x);
+    }
+    for(int i =0; i< 4;i++)
+    {
+        for(int t =0; t < 4; t++)
+        {
+            if(v[i].bi < v[t].bi)
+            {
+                v[i].num++;
+            }
+        }
+        s+=v[i].num;
+    }
+    //cout<<"s ="<<s<<endl;
+    for(int i= 0; i < 4; i++)
+    {
+        //cout<<v[i].num<<" ";
+        printf("%.2lf\n",v[i].num*all/s);
+    }
+
+    return 0;
+}
+Problem1241
+
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+	int i,t,r;
+	double a[2],b[2],c[2];
+	double d,f,g,p,s;
+	for(i=1;i<=2;i++)
+	   scanf("%lf",&a[i]);
+	for(t=1;t<=2;t++)
+	   scanf("%lf",&b[t]);
+	for(r=1;r<=2;r++)
+	   scanf("%lf",&c[r]);
+	
+
+
+	
+	d=sqrt(pow((a[1]-b[1]),2)+pow((a[2]-b[2]),2));
+	f=sqrt(pow((a[1]-c[1]),2)+pow((a[2]-c[2]),2));
+	g=sqrt(pow((c[1]-b[1]),2)+pow((c[2]-b[2]),2));
+	p=(d+f+g)/2;
+	
+	s=sqrt(p*(p-d)*(p-f)*(p-g));
+	printf("%.4lf\n",s);
+	return 0;
+}
+Problem1243
+
+#include <iostream>
+
+using namespace std;
+struct stu
+{
+    int num;
+    int a;
+};
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i =0; i < n; i++)
+    {
+        stu s;
+        int num =0;
+        int ok =1;
+        cin>>s.num;
+        for(int t =0; t < s.num; t++)
+        {
+            cin>>s.a;
+            if(s.a < 60) num++;
+            if(s.a <0 || s.a > 100 ) ok =0;
+        }
+        if(ok)
+        cout<<num<<endl;
+        else
+            cout<<-1<<endl;
+    }
+    return 0;
+}
+Problem1244
+
+#include<stdio.h>
+int main()
+{int a[100];
+ int n,t;
+ int i;
+ while(scanf("%d",&n)!=EOF)
+ {
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    {
+        if((a[i]%50==0||a[i]%100==0)&&a[i]>=0&&a[i]<=20000)
+    {
+      if(a[i]%2000==0)
+     {  t=0;
+         while(a[i]>0)
+     {
+         if(t==0)
+     {printf("2000");
+      t++;
+      a[i]-=2000;
+       }
+       else
+       {printf(" 2000");
+        a[i]-=2000;
+     }
+     }
+     printf("\n");
+     }
+     else
+     {while(a[i]>2000)
+       {
+        printf("2000 ");
+        a[i]-=2000;
+       }
+       printf("%d\n",a[i]%2000);
+     }}
+     else
+     printf("NO\n");
+    }}
+ 
+      return 0;
+    }
+Problem1246
+
+#include<stdio.h>
+int main()
+{
+    double a,b,c,d,e,f,x1,x2;
+    while(scanf("%lf%lf%lf%lf%lf%lf",&a,&b,&c,&d,&e,&f)!=EOF)
+    {
+        if(b==a*1.0/d*e&&c==a*1.0/d*f)
+        printf("HAHA\n");
+        else if(b==a*1.0/d*e&&c!=a*1.0/d*f)
+        printf("NO\n");
+        else
+        {
+        x2=(c-a*1.0/d*f)*1.0/(b-a*1.0/d*e);
+        x1=(c-b*x2)*1.0/a;
+        printf("%.4lf %.4lf\n",x1,x2);
+        }
+    }
+    return 0;
+}
+Problem1249
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,r1,r2,r3;
+    while(cin>>a>>b>>c>>r1>>r2>>r3)
+    {
+        for(int i = 0; ; i++)
+        {
+            if(i % a == r1 &&
+               i % b == r2 &&
+               i % c == r3)
+            {
+                cout<<i<<endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}
+Problem1251
+
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int count=0,flag=0;
+    char str[1000],*p=str;
+    gets(str);
+    for(;*p!='\0';p++)
+    {
+        if(((*p<='z'&&*p>='a')||(*p<='Z'&&*p>='A'))&&flag==0)
+           {
+               count++;
+               flag=1;
+        }
+        else if((*p<='z'&&*p>='a')||(*p<='Z'&&*p>='A'))
+        continue;
+        else
+        flag=0;
+     }
+     printf("%d",count);
+     return 0;
+}
+Problem1252
+
+#include<stdio.h>
+#include <math.h>
+int g(int a,int b)
+
+{
+	int r,t,m;
+	if(a==0||b==0)
+	{  m=fabs(a-b);
+
+
+	return  m;}
+
+	 else if(a<b)
+	{t=a;a=b;b=t;}
+	r=a%b;
+	while(r)
+	{
+	a=b;
+	b=r;
+	r=a%b;
+	
+	}
+	return b;
+}
+
+    int main()
+	{
+		int a,b;
+		while (scanf("%d %d",&a,&b)  !=EOF)
+		printf("%d\n",g(a,b));
+	return 0;
+
+}
+Problem1252
+
+#include <iostream>
+using namespace std;
+int f(int n,int m)
+{
+    if(m == 0) return n;
+    else
+        return f(m,n%m);
+}
+int main()
+{
+    int n,m;
+    while(cin>>n>>m)
+    cout<<f(n,m)<<endl;
+
+    return 0;
+
+}
+Problem1253
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[100000];
+    int all;
+    int i,t;
+    for(i =1; i < 10000; i++)
+    {
+           all =0;
+           for(t =1; t< i&& t!=i; t++)
+             if(i % t ==0) all+=t;
+
+        a[i] =all;
+    }
+    int n;
+    cin>>n;
+    for(i =1; i < n; i++)
+    {
+       if( a[a[i]]  == i && a[i] > i)
+       {
+           cout<<i<<" "<<a[i]<<endl;
+       }
+    }
+    return 0;
+}
+Problem1255
+
+#include <iostream>
+using namespace std;
+int count1;
+int m,n;
+void dfs(int m2,int n2)
+{
+    if(m2 > n2)  return;
+    if(n2 > n)  return;
+    if(m2 > m)  return;
+    if(n2 + m2 == n+m )  count1++;
+    dfs(m2,n2+1);
+    dfs(m2+1,n2);
+}
+int main()
+{
+
+    while(cin>>m>>n)
+    {
+        count1 = 0;
+        dfs(0,0);
+        cout<<count1<<endl;
+    }
+    return 0;
+}
+Problem1256
+
+#include <iostream>
+#include <queue>
+#include <cstring>
+#include <cstdio>
+using namespace std;
+struct Node
+{
+    int x;
+    int y;
+};
+int dx[] = {-2,-2,-1,1,2, 2, 1,-1};
+int dy[] = {-1, 1, 2,2,1,-1,-2,-2};
+int map[30][30];
+void Bfs(int n,int m,Node s,Node t)
+{
+    queue<Node> q;
+    q.push(s);
+    while(!q.empty())
+    {
+        Node node= q.front(); q.pop();
+        int x = node.x;
+        int y = node.y;
+        if(x == t.x && y == t.y)  break;
+        for(int i =0; i < 8; i++)
+        {
+            int cur_x = x + dx[i];
+            int cur_y = y + dy[i];
+            if(cur_x >= n || cur_x < 0 || cur_y >= m || cur_y < 0)  continue;
+            map[cur_x][cur_y] = map[x][y] +1;
+            node.x = cur_x;
+            node.y = cur_y;
+            q.push(node);
+        }
+    }
+}
+void print_map(int n,int m)
+{
+    for(int i =0; i < n; i++)
+    {
+            for(int t =0; t <m; t++)
+    {
+        cout<<map[i][t]<<" ";
+
+    }cout<<endl;
+    }
+
+}
+int main()
+{
+
+    int n,m;
+
+    while(cin>>n>>m)
+    {
+        Node s,t;
+        //memset(map,1,sizeof(map));
+        cin>>s.x>>s.y>>t.x>>t.y;
+       // print_map(n,m);
+        memset(map,0,sizeof(map));
+        //print_map(n,m);
+        Bfs(n,m,s,t);
+        cout<<map[t.x][t.y]<<endl;
+
+    }
+    return 0;
+}
+Problem1262
+
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+using namespace std;
+int judge(int i)
+{
+    if(i % 4 == 0 && i % 100 !=0 || i % 400==0)
+        return 1;
+    else
+        return 0;
+}
+int is_prime(int count)
+{
+    int m = floor(sqrt(count) + 0.5);
+    for(int i =2; i <= m; i++)
+    {
+        if( count % i ==0 )
+            return 0;
+    }
+    return 1;
+}
+int main()
+{
+
+    int mo[15] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
+    for(int i = 1988; i <= 1989; i++)
+    {
+        if(judge(i));
+        mo[2] = 29;
+        for(int t = 1; t <= 12; t++)
+          for(int n = 1; n <= mo[t]; n++)
+          {
+              int count = i * 10000 + t *100 + n;
+              if(is_prime(count))  cout<<count<<endl;
+          }
+    }
+    return 0;
+}
+Problem1262
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a[10000]= {19880101,
+                   19880111,
+                   19880117,
+                   19880129,
+                   19880221,
+                   19880317,
+19880321,
+19880323,
+19880417,
+19880501,
+19880519,
+19880521,
+19880603,
+19880629,
+19880711,
+19880719,
+19880723,
+19880807,
+19880911,
+19881019,
+19881101,
+19881227,
+19881229,
+19890103,
+19890107,
+19890307,
+19890413,
+19890503,
+19890509,
+19890517,
+19890523,
+19890707,
+19890713,
+19890817,
+19890911,
+19890919,
+19891007,
+19891019,
+19891031,
+19891103,
+19891117,
+19891127,
+19891213,
+19891229};
+for(int i =0; i < 44; i++)
+{
+    cout<<a[i]<<endl;
+}
+return 0;
+}
+Problem1267
+
+#include <iostream>
+#include <set>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string a;
+    string b;
+    set<string> s;
+    int k =0;
+    while(getline(cin,a))
+    {
+
+
+            for(int i =0; i < a.size(); i++)
+            {
+                if(a[i] == '(')  break;
+                else  b += a[i];
+
+            }
+            //cout<<b<<endl;
+            if(s.count(b) == 0)
+               {
+                  // cout<<s.count(b)<<endl;
+                   s.insert(b);
+                   b.clear();
+               }
+            else
+               b.clear();
+
+
+    }
+    for(set<string>::iterator it = s.begin(); it != s.end(); it++)
+    {
+        cout<<*it<<endl;
+    }
+    return 0;
+}
+Problem1278
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    while(cin>>n)
+    {
+        int d = 0;
+        int h = 0;
+        int m = 0;
+        int s = 0;
+        if(n >= 86400)
+        {d = n / 86400; n%=86400;}
+        if(n >= 3600)
+       {h = n / 3600; n%=3600;}
+        if(n >= 60)
+        {m = n / 60; n%= 60;}
+
+        s = n;
+        cout<<d<<" days "<<h<<" hours "<<m<<" minutes "
+        <<s<<" seconds"<<endl;
+
+
+    }
+    return 0;
+}
+Problem1288
+
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	 scanf("%d%d",&a,&b);
+	printf("%d\n",a+b);
+	return 0;
+}
+Problem1288
+
+#include<iostream.h>
+int main()
+{
+	int a,b;
+	cin>>a>>b;
+	cout<<a+b<<endl;
+	return 0;
+}
+Problem1289
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+int cmp(int a,int b)
+{
+    return a > b;
+}
+int is_prime(int m)
+{
+    int n = floor(sqrt(m) + 0.5);
+    for(int i =2; i <= n; i++)
+        if(m % i== 0)  return 0;
+    return 1;
+}
+int main()
+{
+    int n,k,m;
+    cin>>n>>k;
+    int * a = new int[n];
+    for(int i = 0; i < n; i++)
+        cin>>a[i];
+    sort(a,a+n);
+    int s1 = a[k-1];
+    //cout<<s1<<endl;
+    sort(a,a+n,cmp);
+    int s2 = a[k-1];
+    //cout<<s2<<endl;
+    m = s2 - s1;
+    if(is_prime(m) && m >=2 )  cout<<"YES"<<endl;
+
+    else cout<<"NO"<<endl;
+
+    cout<<m<<endl;
+    return 0;
+}
+Problem1304
+
+#include <iostream>
+
+using namespace std;
+int minn = 101000;
+int v;
+int n;
+int a[20000];
+void dfs(int t,int cur)
+{
+    if(cur > v) return;
+    else
+    {
+        if(v - cur <= minn) minn = v - cur;
+        for(int i = t + 1; i < n; i++)
+        {
+            dfs(i,cur + a[i]);
+        }
+    }
+}
+int main()
+{
+
+    cin>>v>>n;
+    for(int i =0; i < n; i++)
+       cin>>a[i];
+       for(int i =0; i < n; i++)
+       {
+            dfs(i,a[i]);
+       }
+
+     cout<<minn;
+
+
+    return 0;
+}
+Problem1306
+
+#include <cstdio>
+#include <cstring>
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long   a =1;
+	long long arr[30];
+	long long arr3[30];
+	int i ;
+	for(i =1; i <= 20; i++)
+	{
+		a*=i;
+
+		while(a % 10 ==0)
+		{
+			a/=10;
+		}
+		arr[i] = a;
+		//printf("arr[%d] == %I64d\n",i,arr[i]);
+	}
+	memcpy(arr3,arr,sizeof(arr));
+
+	int n,m,t,arr2[100];
+
+	cin>>n>>m;
+
+	int len =  (int)log10(arr3[n])+1;
+	if(len <= m)  cout<<arr3[n]<<endl;
+	else
+	{
+	  for(t =1; t<= m; t++)
+	 {
+		arr2[t] = arr[n]%10;
+	    arr[n] /= 10;
+	 }
+
+	  for(t = m; t >= 1; t--) cout<<arr2[t];
+
+	    cout<<endl;
+
+	}
+
+	return 0;
+
+}
+Problem1307
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+int cmp(int a,int b)
+{
+    return a>b;
+}
+int main()
+{
+    int n;
+    int a[10005],b[10005];
+    cin>>n;
+    for(int i =0; i < n; i++)
+    {
+        cin>>a[i];
+    }
+     for(int i =0; i < n; i++)
+    {
+        cin>>b[i];
+    }
+    int cur =0;
+    sort(a,a+n);
+    sort(b,b+n,cmp);
+    for(int i = 0; i < n; i++)
+    {
+        cur+=abs(a[i] - b[i]);
+    }
+    cout<<cur<<endl;
+
+
+
+    return 0;
+}
+Problem1308
+
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <algorithm>
+using namespace std;
+int prime[20010];
+int is_prime(int n)
+{
+    int m = floor(sqrt(n) +0.5);
+    for(int i = 2; i <= m; i++)
+    {
+        if(n % i == 0) return 0;
+    }
+    return 1;
+}
+void prim()
+{
+    int j =0;
+    for(int i = 2; i <=20010 ; i++)
+    {
+        if(is_prime(i))
+           {
+               prime[j++] = i;
+              // cout<<i<<" ";
+           }
+    }
+}
+int main()
+{
+
+
+    prim();
+    int n;
+    cin>>n;
+    int max = -10000;
+    int max2;
+    while(n--)
+    {
+        int m ;
+        cin>>m;
+        int cur = 0;
+        for(int i =0; ; i++)
+        {
+            if(m < prime[i])  break;
+
+            if(m % prime[i] == 0 && m >= prime[i])
+            {
+                if(cur < prime[i])
+                    cur = prime[i];
+
+            }
+
+        }
+        if(cur >= max)
+        {
+            max= cur;
+            max2= m;
+        }
+    }
+    cout<<max2<<endl;
+
+
+    return 0;
+}
+Problem1312
+
+#include <cstdio>
+#include <cstring>
+#include <ctype.h>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+char dict[30], word[256];
+long arr[256], len[256], ans;
+
+long find( char key )
+{
+    long i;
+     for (  i = 0; i < strlen(dict); i ++ )
+         if ( key == dict[i] )
+            break;
+
+     return i+1;
+}
+
+long solve ( long* num )
+{
+     long i, j, tmp=1;
+     for ( i = 0; i < strlen(word)-1; i ++ )
+         for ( j = i+1; j < strlen(word); j ++ )
+             if ( arr[i] <= arr[j] )
+            {
+                len[j] = max (len[j],len[i]+1);
+                tmp = max ( tmp,len[j]);
+             }
+     return tmp;
+}
+
+int main()
+{
+    scanf ( "%s", dict );
+    long i;
+    for( i = 0; i < 256; i ++ )  len[i] = 1;
+    while ( ( scanf("%s", word) )!= EOF && isprint(word[0]) )
+    {
+          for( i = 0; i < 256; i ++ )  len[i] = 1;
+          for ( i = 0; i < strlen(word); i ++ )
+              arr[i] = find(word[i]);
+          ans = solve(arr);
+
+          printf ( "%ld", ans );
+          ans = 0;
+          memset ( word, 0, sizeof(word) );
+          memset ( arr, 0, sizeof(arr) );
+    }
+
+    cout<<endl;
+    return 0;
+}
+Problem1313
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long n;
+    cin>>n;
+    while(n--)
+    {
+        string a;
+        cin>>a;
+        int b = a[a.size()-1]  - '0';
+        //cout<<b<<endl;
+        if(b%2 !=0)  cout<<"odd\n";
+        else cout<<"even\n";
+    }
+    return 0;
+}
+Problem1314
+
+#include <stdio.h>  
+#include <math.h>  
+int f[100000]={0};  
+int sum[100000]={0};  
+void set()  
+{  
+    int i,j,s=0;  
+    for( i=2;i<=sqrt(100000);i++)  
+          if(f[i]==0)  
+    for(j=2*i;j<100000;j+=i)  
+            f[j]=1;  
+    for( i=2;i<100000;i++)  
+    {  
+        if(f[i]==0)  
+            s+=i;  
+        sum[i]=s;  
+    }  
+}  
+int main()  
+{  
+    int a,b;  
+    set();  
+    while(scanf("%d%d",&a,&b)!=EOF)  
+    printf("%d\n",sum[b]-sum[a-1]);  
+}
+Problem1314
+
+#include <stdio.h>  
+#include <math.h>  
+int f[100000]={0};  
+int sum[100000]={0};  
+void set()  
+{  
+    int i,j,s=0;  
+    for( i=2;i<=sqrt(100000);i++)  
+          if(f[i]==0)  
+    for(j=2*i;j<100000;j+=i)  
+            f[j]=1;  
+    for( i=2;i<100000;i++)  
+    {  
+        if(f[i]==0)  
+            s+=i;  
+        sum[i]=s;  
+    }  
+}  
+int main()  
+{  
+    int a,b;  
+    set();  
+    while(scanf("%d%d",&a,&b)!=EOF)  
+    printf("%d\n",sum[b]-sum[a-1]);
+    return 0;  
+}
+Problem1314
+
+#include <stdio.h>
+#include <math.h>
+
+int isprime(int x);
+int main()
+{
+	int a,b,i,sum;
+
+	int c[100000];
+	int ic,j;
+	ic=0;
+	for(i=0; i<100000; i++)
+		if( isprime(i) )
+		{
+			c[ic++] = i;
+		}
+
+	while (scanf("%d %d",&a,&b)!=EOF)
+{	     sum=0;
+      	for(i=0;i<ic;i++)
+	 if( c[i] >= a )
+			break;
+	for(j=i; j<ic; j++)
+		if( c[j] <=b )
+				sum=sum+c[j];
+		
+	     printf("%d\n",sum);
+}	
+
+	
+	return 0;
+}
+
+int isprime(int x)
+{
+	int t;
+	double k;
+	if ( x==0 || x==1 ) 
+		return 0;
+	k=sqrt(x);
+	for(t=2;t<=k;t++)
+		{
+			if(x%t==0)
+			{
+			return 0;
+			}
+		}
+	return 1;
+}
+Problem1315
+
+#include  <stdio.h>
+int f(int n,int r) 
+
+{  
+	int count=0; 
+	while(n) 
+	{  
+		if(n%r==1)
+			count++; 
+		n/=r; 
+	}  	
+	return count; 
+} 
+ int main() 
+{  
+	int n,r;  
+	while(scanf("%d%d",&n,&r)!=EOF) 
+		printf("%d\n",f(n,r)); 
+	return 0;
+}  
+Problem1316
+
+#include <stdio.h>  
+#include <math.h>  
+int gcd(int a,int b)  
+{  
+    return b?gcd(b,a%b):a;  
+}  
+void f(int x,int y,int*a,int*b)  
+{  
+    y*=gcd(x,y);  
+    *a=(x-sqrt(x*x-4*y))/2;  
+    *b=(x+sqrt(x*x-4*y))/2;  
+}  
+int main()  
+{  
+    int x,y,a,b;  
+    while(scanf("%d%d",&x,&y)!=EOF)  
+    {  
+        f(x,y,&a,&b);  
+        printf("%d %d\n",a,b);  
+    }  
+} 
+Problem1317
+
+#include <stdio.h>
+int main()
+{
+	float  a,b;
+	int i;
+	
+	while (scanf("%f %f",&a,&b)!=EOF)
+	{i=0;
+	
+	if(a>b)
+	{	printf("0\n");
+	
+	}
+	else 
+	{
+		while(a<=b)
+		{
+			a=a*1.1;
+			i++;
+		}
+		printf("%d\n",	i);
+	}
+	}
+	return 0;
+}
+Problem1324
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+int map[105][105];
+int n,m;
+int dx[] = {1,0};
+int dy[] = {0,1};
+int max2 = -1000000;
+void scan_map()
+{
+    for(int i =0; i < n; i++)
+        for(int t =0; t < m; t++)
+        {
+            cin>>map[i][t];
+
+        }
+}
+void dfs(int x,int y, int num)
+{
+    if(x >= n || y >= m || x < 0 || y < 0)
+        {
+            //cout<<num<<endl;
+            if(num > max2)
+             max2 = num;
+        }
+    else
+    {
+        for(int i =0 ;i <2; i++)
+        {
+            int curx = x + dx[i];
+            int cury = y + dy[i];
+            if(map[curx][cury] == -2)  continue;
+            dfs(curx,cury,num+map[curx][cury]);
+        }
+    }
+}
+void print_map()
+{
+     for(int i =0; i < n; i++)
+        {
+            for(int t =0; t < m; t++)
+        {
+            cout<<map[i][t]<<" ";
+
+        }
+        cout<<endl;
+        }
+}
+int main()
+{
+    int p;
+    cin>>p;
+    while(p--)
+    {
+        int x,y;
+        int ok =0;
+        max2 = -1000000;
+        cin>>n>>m;
+        memset(map,0,sizeof(map));
+        scan_map();
+        for(int i =0; i < n; i++)
+        {
+            for(int t =0; t < m; t++)
+            if(map[i][t] == -1)
+            {
+                 x = i;
+                 y = t;
+                 ok =1;
+                 break;
+            }
+            if(ok == 1)  break;
+        }
+
+
+       //print_map();
+
+     //  cout<<x<<" "<<y<<endl;
+       dfs(x,y,0);
+        if( max2 == -1000000 ) cout<<-1<<endl;
+        else
+        cout<<max2<<endl;
+
+    }
+    return 0;
+}
+Problem1325
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,d,e,f,g,h;
+    while(cin>>a>>b>>c>>d>>e>>f>>g>>h)
+    {
+        for(int i = g;i <= h; i++)
+        {
+            if(i % a == b && i % c == d && i % e == f) cout<<i<<endl;
+        }
+    }
+    return 0;
+}
+Problem1328
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+struct stu
+{
+    string name;
+    int x;
+    int y;
+    int z;
+    int sroce;
+    stu()
+    {
+        x = y = z = sroce =0;
+    }
+};
+int cmp(stu s, stu m)
+{
+    return s.sroce > m.sroce;
+}
+int main()
+{
+    int n;
+    cin>>n;
+
+    vector<stu> v;
+    for(int i =  0; i < n; i++)
+   {
+       stu s;
+       cin>>s.name>>s.x>>s.y>>s.z;
+       s.sroce = s.x *s.x * s.x + s.y *s.y + s.z;
+       v.push_back(s);
+
+   }
+   stable_sort(v.begin(),v.end(),cmp);
+   for(int i =0; i < n; i++)
+   {
+       cout<<v[i].name<<" "<<v[i].sroce<<endl;
+   }
+    return 0;
+}
+Problem1329
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+int dx[] = {-1,0,1,0};
+int dy[] = {0,1,0,-1};
+int num = 0;
+int a,n,m,k;
+int map[1010][1010];
+int help_map[1010][1010];
+void scan_map()
+{
+    for(int i =0; i < n; i++)
+        for(int t =0; t < m; t++)
+    {
+        cin>>help_map[i][t];
+    }
+}
+void dfs(int x, int y )
+{
+        if(x < 0 ||x >= n || y < 0 ||y >= m)  return;
+        if(map[x][y] != 1 ) return;
+        map[x][y] = 2;
+        num++;
+        //cout<<"("<<x<<" "<<y<<")"<<endl;
+        for(int i =0; i < 4; i++)
+        {
+            int curx = x + dx[i];
+            int cury = y + dy[i];
+            dfs(curx,cury);
+        }
+}
+
+int main()
+{
+
+    cin>>a;
+
+    while(a--)
+    {
+        cin>>n>>m>>k;
+        scan_map();
+        for(int i =0; i < k; i++)
+    {
+        int x,y;
+        num = 0;
+        cin>>x>>y;
+        memcpy(map,help_map,sizeof(help_map));
+        if(x < 0 || x >= n || y < 0 || y >= m)  cout<<-1<<endl;
+
+        else
+        {
+            if(map[x][y] == 0 )  cout<<0<<endl;
+         else
+        {
+            for(int i =0 ;i < 4; i++)
+            {
+                x = x + dx[i];
+                y = y + dy[i];
+                dfs(x,y);
+            }
+            cout<<num<<endl;
+        }
+
+        }
+    }
+    }
+
+
+    return 0;
+}
+Problem1332
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    while(n--)
+    {
+        int a,max = -100000;
+        int min = 100000 ;
+        cin>>a;
+        if(a % 2 != 0)  cout<<0<<" "<<0<<endl;
+        else
+        {
+           for(int i = 0; 2 * i <= a; i++)
+            for(int t = 0; 2 * i + 4 * t <= a;t++)
+           {
+               if(2 * i + 4 * t  == a)
+               {
+                   if(i+t>max)  max = i+t;
+
+                   if(i+t<min)  min = i+t;
+
+               }
+           }
+
+            cout<<min<<" "<<max<<endl;
+
+        }
+
+    }
+    return 0;
+}
+Problem1336
+
+
+#include <stdio.h>
+int a[1111111];
+int main()
+{
+    int i,j,m,n,k,t,p;
+    a[1]=1;
+    a[2]=2;
+    for(i=3;i<=1000010;i++)
+    {
+        if(a[i]%2==1)  a[i]=a[i-1];
+        else   a[i]=(a[i-2]+a[i/2])%1000000000;
+
+    }
+
+
+    scanf("%d",&k);
+    while(k--)
+    {
+        scanf("%d",&p);
+        printf("%d\n",a[p]);
+    }
+
+    return 0;
+}
+Problem1342
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[100];
+    int count1 =0;
+    int cur = -1000000000;
+    int ok =1;
+    while(cin>>a[count1])
+    {
+        if(cur <= a[count1])
+            cur = a[count1];
+        else
+            ok =0;
+        count1++;
+    }
+    if(ok) cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+
+    return 0;
+}
+Problem1344
+
+#include <stdio.h>
+int main()
+{
+	int a,b,c,d;
+	scanf("%d %d %d %d",&a,&b,&c,&d);
+	
+	printf("%d %d\n",a+c,b+d);
+
+	return 0;
+}
+Problem1345
+
+#include<stdio.h>
+int main()
+{
+	int a[3],b[3];
+	int i,t;
+	for( i=1;i<=2;i++)
+		scanf("%d",&a[i]);
+	for(t=1;t<=2;t++)
+	    scanf("%d",&b[t]);
+	printf("%d %d\n",a[1]*b[1]-a[2]*b[2],a[1]*b[2]+a[2]*b[1]);
+	return 0;
+}
+Problem1346
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+struct Node
+{
+    int a;
+    int b;
+};
+int cmp(Node a,Node b)
+{
+    return a.b > b.b;
+}
+int main()
+{
+    int n,m;
+    vector<Node>  v;
+    cin>>n>>m;
+    for(int i =0; i < n+m; i++)
+    {
+        Node node;
+        int ok =0;
+        cin>>node.a>>node.b;
+
+
+            for(int i =0; i < v.size(); i++)
+            {
+                if(node.b == v[i].b)
+                {v[i].a += node.a;ok =1;}
+            }
+           if(ok == 0)
+             v.push_back(node);
+
+    }
+
+    sort(v.begin(),v.end(),cmp);
+    for(int i =0; i < v.size(); i++)
+    {
+        if(v[i].a!=0)
+         cout<<v[i].a<<" "<<v[i].b<<endl;
+    }
+
+
+    return 0;
+}
+Problem1349
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,p,x1,x2;
+scanf("%f%f%f",&a,&b,&c);
+if((a==0)&(b==0))
+{
+if(c==0)
+ printf("x可为任意数，有无穷多个解\n");
+else
+ printf("无解\n");
+} 
+else if(a==0&&b!=0)
+{ 
+ printf("%.2f\n",-c/b);
+}
+else if(a!=0)
+{
+ p=b*b-4*a*c;
+ if(p<0)
+ {
+  printf("没有实数解\n");
+ }
+ else
+ {
+  x1=(-b+sqrt(fabs(p)))/(2*a);
+  x2=(-b-sqrt(fabs(p)))/(2*a);
+  printf("%.2f %.2f\n",x1,x2);
+ }
+}
+return 0;
+}
+Problem1350
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[90];
+	char* p,*y;
+	int i=0;
+	p=a;
+	y=a;
+	gets(a);
+
+    while (*p)
+	{
+		if(*p>='a'&&*p<='z'||*p>='A'&&*p<='Z')
+		{
+			*y=*p;
+		    ++y;
+		}
+		p++;
+	}
+	*y='\0';
+	
+	puts(a);
+	
+	
+		
+	return 0;
+}
+Problem1351
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int a[4];
+    for(int i =0; i < 4; i++) cin>>a[i];
+    int m[4][3]=
+    {
+        {a[0],a[1],a[2]},
+        {a[0],a[1],a[3]},
+        {a[0],a[2],a[3]},
+        {a[1],a[2],a[3]},
+    };
+    for(int i =0; i < 4; i++)
+    {
+        //cout<<m[i][0]<<" "<<m[i][1]<<" "<<m[i][2];
+        do
+        {
+             cout<<m[i][0]<<" "<<m[i][1]<<" "<<m[i][2]<<endl;
+        }while(next_permutation(m[i],m[i]+3));
+    }
+
+    return 0;
+}
+Problem1355
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    long long a;
+    while(cin>>a)
+    {
+        long long sum =0;
+        while(a)
+    {
+        sum += a%10;
+        a/=10;
+    }
+    cout<<sum<<endl;
+    }
+
+    return 0;
+}
+Problem1359
+
+#include <iostream>
+
+using namespace std;
+struct qata
+{
+    int year;
+    int moth;
+    int day;
+};
+int is_ru(int year)
+{
+    if(year %4 == 0&& year% 100 !=0 || year %400 == 0)
+        return 1;
+    else
+        return 0;
+}
+int main()
+{
+
+    qata q;
+
+    while(cin>>q.year>>q.moth>>q.day)
+    {
+    int count =0;
+    int mo[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+    if(is_ru(q.year)) mo[2] = 29;
+
+    for(int i = 1; i < q.moth; i++)
+    {
+        count += mo[i];
+    }
+    count += q.day;
+    cout<<count<<endl;
+    }
+
+
+    return 0;
+}
+Problem1360
+
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	while (scanf("%x %x",&a,&b)!=EOF)
+
+		printf("%X\n",a+b);
+	
+
+	return 0;
+}
+Problem1366
+
+#include<stdio.h>
+#include <string.h>
+int main()
+{
+    int i,k,j,o,n,sum,x,y,p,q;
+    char arry2[400],f,g;
+    char arry[800];
+    while(scanf("%d",&n)!=EOF)
+    {
+        sum=0;
+        scanf("%s",arry2);
+
+		strcpy(arry,arry2);
+        strcat(arry,arry2);
+        for(i=n;i<=2*n;i++)
+        {
+			k=x=y=p=q=0;
+            for(j=i;j<=2*n;j++)
+            {
+			    if(arry[j]!='w')
+				{
+                	f=arry[j];
+					break;
+				}
+			}
+			for(o=i-1;o>=0;o--)
+            {
+			    if(arry[o]!='w')
+				{
+                	g=arry[o];
+					break;
+				}
+			}
+			if(g!=f)
+			{
+				for(j=i;j<2*n;j++)
+				{
+			        if(arry[j]=='w'||arry[j]==f)
+					    k++;
+			    	else
+				    	break;
+				}
+                for(o=i-1;o>=0;o--)
+				{
+			        if(arry[o]=='w'||arry[o]==g)
+					    k++;
+				    else
+					    break;
+				}
+			}
+            else
+			{
+				for(j=i;j<2*n;j++)
+				{
+			        if((arry[j]=='w'||arry[j]==f)&&p==0)
+					    k++;
+			    	else
+					{
+				    	x++;
+						p=1;
+						if(arry[j+1]==f)
+							break;
+					}
+				}
+				for(o=i-1;o>=0;o--)
+				{
+			        if((arry[o]=='w'||arry[o]==g)&&q==0)
+					    k++;
+				    else
+					{
+						y++;
+						q=1;
+						if(arry[o-1]==g)
+							break;
+					}
+				}
+				if(x>y)
+					k=k+x;
+				else
+					k=k+y;
+			}
+            if(k>sum)
+            sum=k;
+        }
+		if(sum>n)
+			sum=n;
+        printf("%d\n",sum);
+    }
+    return 0;
+}
+Problem1367
+
+#include <stdio.h>
+int main()
+{
+	int n,a[100],i,t,id;
+	while (scanf("%d",&n),n!=0)
+	{
+		int b[100]={0};
+		for(i=0;i<n;i++)
+			scanf("%d",&a[i]);
+		for(i=0;i<n;i++)
+		{
+			for(t=0;t<n;t++)
+			{
+				if(a[i]==a[t])
+				b[i]++;
+			}
+			if(b[i]==1)
+			    id=a[i];
+		}
+
+					
+	    printf("%d\n",id);
+
+
+	}
+	return 0;
+}
+Problem1369
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+    int n,m;
+    while(cin>>n>>m && n != 0 || m != 0)
+    {
+        int ok =1;
+        for(int i = 0 ; i < 100; i++)
+        {
+            int count = (n*100+i) % m ;
+            if(count == 0)
+            {
+                if(ok == 1)
+               {
+                   printf("%02d",i);
+                   ok = 0;
+               }
+               else
+               printf(" %02d",i);
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+Problem1379
+
+# include<iostream>//用STL
+# include<stdio.h>
+# include<string.h>
+# include<stack>
+using namespace std;
+char map[9] = {'<', '(', '[', '{', '>', ')', ']', '}'};
+int main()
+{
+    int nCase,len,flag,i,j,sign;
+    char str[500];
+    scanf("%d",&nCase);
+    while(nCase--)
+    {
+        stack<int> Num;
+        flag = 0;
+        scanf("%s",str);
+        len= strlen(str);
+        if(len%2==0)
+        {
+            for(i=0;i<len;i++)
+            {
+                for(j=0;j<8;j++)
+                {
+                    if(str[i]==map[j])
+                    {
+
+                        if(!Num.empty())
+                        {
+                            sign= Num.top();
+                            if(sign>=j) Num.push(j);//判断顺序问题
+                            else if(j==sign+4) Num.pop();//判断是否匹配
+                            else
+                            {
+                                flag=1;
+                                break;
+                            }
+                        }
+                        else Num.push(j);
+                    }
+                }
+                if(flag) break;
+            }
+            if(!flag && Num.empty()) printf("YES\n");
+            else printf("NO\n");
+        }
+        else printf("NO\n");
+    }
+    return 0;
+}
+Problem1380
+
+#include <stdio.h>
+int main()
+{
+    int i,i2,i3,j,n,s=0,a[1000],b[4]={0};
+    scanf("%d",&n);
+    for (i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        b[a[i]]++;
+    }
+    b[2]+=b[1];
+    b[3]+=b[2];
+    for (i=0,i2=b[1],i3=b[2];i<b[1];i++)
+        if (a[i]==2)
+        {
+            while (a[i2]!=1) i2++;
+            a[i2]=a[i];
+            s++;
+        }
+        else if (a[i]==3)
+        {
+            while (a[i3]!=1&&i3<b[3]) i3++;
+            if (a[i3]!=1)
+                for (i3=i2;a[i3]!=1;i3++);
+            a[i3]=a[i];
+            s++;
+        }
+    for (i=b[1];i<b[2];i++)
+        if (a[i]!=2) s++;
+    printf("%d\n",s);
+    return 0;
+}
+Problem1380
+
+#include <iostream>
+#include<cstdio>
+using namespace std;
+int a[1001],l[4],x,y,z,n;
+int main()
+{
+    cin>>n;
+    for (int i=1;i<=n;++i)
+    {
+        scanf("%d",&a[i]);
+        ++l[a[i]];
+    }
+    for (int i=1;i<=l[1];++i)
+        if (a[i]!=1) ++x;
+    for (int i=l[1]+1;i<=l[1]+l[2];++i)
+        if (a[i]==3) ++y;
+    for (int i=l[1]+l[2]+1;i<=n;++i)
+        if (a[i]==2) ++z;
+        
+    if (y>z) x+=y;
+
+    else x+=z;
+    printf("%d\n",x);
+    return 0;
+}
+Problem1382
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	while(n--)
+    {
+        int m;
+        cin>>m;
+        double count;
+        double max2= -10000000;
+        for(int  i = 0; i < m; i++)
+        {
+            cin>>count;
+            if(count > max2) max2 = count;
+        }
+        printf("%.2lf\n",max2);
+    }
+
+}
+Problem1383
+
+#include <iostream.h>
+#include <cmath>
+#include <cstdio>
+
+int main()
+{
+   int n,m,a;
+   int num =0;
+   int  c,l;
+   while(scanf("%d %d %d",&n,&m,&a) != EOF)
+   {
+	    c = ceil(n*1.0/a);
+		l = ceil(m*1.0/a);
+		printf("%d\n",c*l);
+
+	   
+   }
+    return 0;
+}
+Problem1390
+
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+int a[1000];
+using namespace std;
+
+int main()
+{
+    int i;
+    int n;
+    int sum=0;
+    while(~scanf("%d",&n)&&n!=0)
+    {
+        sum=0;
+
+        for(i=1;i<=10000;i++)
+       {
+          sum+=pow(2,i);
+          if(sum>=n)
+            break;
+       }
+       printf("%d\n",i);
+    }
+
+
+    return 0;
+}
+Problem1391
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int is_prime(int p)
+{
+    int m = floor(sqrt(p) +0.5);
+    for(int i = 2; i <= m; i++)
+        if(p % i ==0) return 0;
+    return 1;
+}
+int main()
+{
+    int n;
+    while(cin>>n && n!=0)
+    {
+        int ok =0;
+        for(int i =4; i < n; i++)
+        {
+            if(n % i == 0)
+            {
+                if(!is_prime(i) && !is_prime(n/i))
+                    ok =1;
+            }
+        }
+        if(ok) cout<<"Yes\n";
+        else
+            cout<<"No\n";
+    }
+    return 0;
+}
+Problem1393
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int a[10000];
+int main()
+{
+    int i=0;
+    int t,m;
+    int count;
+    for(i=1;;i++)
+    {
+        cin>>a[i];
+        if(0==a[i])
+            break;
+    }
+
+    for(t=1;t<=i-1;t++)
+    {
+        count=0;
+        for(m=1;m<=i-1;m++)
+        {
+            if(a[m]==a[t])
+                count++;
+        }
+
+        if(1==count%2)
+        {
+            cout<<a[t]<<endl;
+            break;
+        }
+
+    }
+
+
+    return 0;
+}
+Problem1394
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    int n,m;
+    while(~scanf("%d",&n)&&n!=0)
+    {
+
+
+            m=(1+n)*n*2;
+            printf("%d\n",m);
+
+    }
+    return 0;
+}
+Problem1395
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string a;
+    while(cin>>a && a != "#")
+    {
+        int all =0;
+        if(a[0] == a[1] && a[0] == a[2] && a[0] == a[3])
+            cout<<150<<endl;
+        if(a[0] == a[1] && a[0] == a[2] && a[0] != a[3])
+            cout<<140<<endl;
+        if(a[0] == a[1] &&a [0] == a[3] && a[0] != a[2])
+            cout<<130<<endl;
+        if(a[0] == a[1] && a[2] == a[3] && a[0] != a[2])
+            cout<<120<<endl;
+        if(a [0] == a[1] && a[0] != a[2] && a[3] != a[2] && a[0]!= a[3])
+            cout<<110<<endl;
+        if(a [0] == a[3] && a[0] == a[2] && a[0] != a[1])
+            cout<<100<<endl;
+        if(a[0] == a[2] && a[1] == a[3] && a[0] != a[1])
+            cout<<90<<endl;
+        if(a[0] == a[2] && a[1] != a[3] && a[0] != a[1] && a[0] != a[3])
+            cout<<80<<endl;
+        if(a[0] == a[3] && a[1] == a[2] && a[0] != a[1])
+            cout<<70<<endl;
+        if(a[1] ==a[2] && a[1] == a[3] &&a[1] != a[0])
+            cout<<60<<endl;
+        if(a[1] == a[2] && a[0] != a[3] && a[1] != a[0] && a[1] != a[3])
+            cout<<50<<endl;
+        if(a[0] == a[3] && a[0] != a[1] && a[0]!= a[2] && a[1] != a[2])
+            cout<<40<<endl;
+        if(a[1] == a[3] && a[0] != a[2] && a[1] != a[0] && a[1]!= a[2])
+            cout<<30<<endl;
+        if(a[2] == a[3] && a[0] != a[1] && a[2] != a[0] && a[2]!= a[1])
+            cout<<20<<endl;
+        if(a[0] != a[1] && a[0] != a[2] && a[0] != a[3] && a[2] != a[3] && a[1] != a[2] && a[1] != a[3])
+            cout<<10<<endl;
+
+
+    }
+    return 0;
+}
+Problem1396
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int a[31];
+int main()
+{
+    int i,t;
+    int sum;
+    while(scanf("%d",&a[1])!=EOF&&a[1]!=0)
+{
+
+    for(i=2;i<=30;i++)
+        cin>>a[i];
+    for(i=1;i<=30;i++)
+    {
+        sum=0;
+        for(t=i;t<=30;t++)
+        {
+            sum+=a[t];
+
+            if(14==sum)
+                break;
+        }
+        if(14==sum)
+                break;
+    }
+    printf("%d %d\n",i,t);
+}
+    return 0;
+}
+Problem1397
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+struct Node
+{
+    int y;
+    int m;
+    int d;
+};
+int mo[13] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
+int judge(int y)
+{
+    if(y % 4 == 0 && y%100 != 0 || y%400 ==0) return 1;
+    else
+        return 0;
+}
+int main()
+{
+   int y,m;
+   Node  s,t;
+   s.y = 1900;
+   s.m = 1;
+   s.d = 1;
+   while(cin>>t.y>>t.m && t.y != 0 || t.m!= 0)
+   {
+       int cur = 0;
+       int ok =0;
+       if(s.y > t.y || s.y == t.y && s.m > t.m) swap(s,t);
+       for(int i = s.y; i <= t.y; i++)
+       {
+           if(judge(i)) mo[2] = 29;
+           else mo[2] = 28;//  记得时刻更新 二月的数据
+           for(int t2 = 1; t2 <= 12; t2++)
+           {
+               for(int p = 1; p <= mo[t2]; p++)
+               {
+                   if(i == t.y && t2 == t.m && p == 15) ok =1;
+                   cur++;
+                   if(ok) break;
+               }
+               if(ok) break;
+           }
+           if(ok) break;
+       }
+     // cout<<cur<<endl;
+      if( cur % 7  == 6) cout<<14<<endl;
+      else if(cur % 7 == 0)  cout<<16<<endl;
+      else cout<<15<<endl;
+   }
+
+    return 0;
+}
+Problem1401
+
+#include <stdio.h>
+
+void toRoman(int num)
+{
+    static char *roman[][10]={"","I","II","III","IV","V","VI","VII","VIII","IX",
+                              "","X","XX","XXX","XL","L","LX","LXX","LXXX","XC",
+                              "","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
+                              "","M","MM","MMM"};
+    int i, j, n;
+
+    for(j = 0, i = 10000; j < 4; ++j, i/=10)
+    {
+        n = (num%i) / (i/10);
+        printf("%s",roman[3-j][n]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    int n;
+    char* roman;
+
+    while(scanf("%d", &n)!=EOF)
+    {
+
+      toRoman(n);
+    }
+
+
+    return 0;
+}
+Problem1404
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   string a,b;
+   while(cin>>a>>b)
+   {
+       string::size_type it = a.find(b);;
+       int len = a.size();
+       if(it == a.npos) cout<<"NULL"<<endl;
+       else
+       {
+          for(;it<len;it++)
+            cout<<a[it];
+           cout<<endl;
+       }
+   }
+    return 0;
+}
+Problem1405
+
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string a;
+    while(cin>>a)
+    {
+        int m[100000];
+        for(int i =0; i < a.size(); i++)
+        {
+            if(a[i] == '(' )  m[i] = 1;
+            if(a[i] == ')' )  m[i] = 2;
+            if(a[i] == '{' )  m[i] = 3;
+            if(a[i] == '}' )  m[i] = 4;
+            if(a[i] == '[' )  m[i] = 5;
+            if(a[i] == ']' )  m[i] = 6;
+           // cout<<m[i]<<" ";
+
+        }
+        stack<int> s;
+        s.push(m[0]);
+        for(int i =1; i < a.size(); i++)
+        {
+            if(!s.empty())
+            {
+                char f = s.top();
+            if(m[i] == f + 1) {s.pop();}
+            else
+                s.push(m[i]);
+            }
+            else
+                s.push(m[i]);
+
+        }
+        if(s.empty())
+            cout<<"true"<<endl;
+        else
+            cout<<"false"<<endl;
+    }
+    return 0;
+}
+Problem1407
+
+#include <stdio.h>
+int main()
+{
+	int n,i,a[100],min,t=1;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		scanf("%d",&a[i]);
+		
+	}
+	min=a[1];
+	for(i=1;i<=n;i++)
+	{
+		if(min>a[i])
+		{
+			
+			min=a[i];
+			t=i;
+		}
+	}
+	printf("%d\n",t);
+	
+	return 0;
+}
+Problem1407
+
+#include <stdio.h>
+int main()
+{
+	int n,i,a[100],min,t=1;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		scanf("%d",&a[i]);
+
+	}
+	min=a[1];
+	for(i=1;i<=n;i++)
+	{
+		if(min>a[i])
+		{
+
+			min=a[i];
+			t=i;
+		}
+	}
+	printf("%d\n",t);
+
+	return 0;
+}
+Problem1408
+
+#include <stdio.h>
+int main()
+{
+	char c[100];
+	int a,n,b,i,jin,t;
+	
+	scanf("%d %d",&a,&b);
+	getchar();
+	jin = 0;
+	for(n=1;n<=a;n++)
+	{
+		i=0;t=0;
+		gets(c);
+		while (c[i]!='\0' )
+		{
+			if( c[i]==' ') t++;
+			i++;
+		}
+		t++;
+		if( t==b )
+			jin=1;
+		
+	}
+	if(jin==1)
+		printf("YES\n");
+	else 
+		printf("NO\n");
+	
+	return 0;
+}
+
+Problem1408
+
+#include <cstdio>
+#include <iostream>
+using namespace std;
+int main()
+{
+	char c[100];
+	int a,n,b,i,jin,t;
+
+	cin>>a>>b;
+	jin = 0;
+	for(n=1;n<=a;n++)
+	{
+		i=0;t=0;
+		gets(c);
+		getchar();
+		while (c[i]!='\0' )
+		{
+			if( c[i]==' ') t++;
+			i++;
+		}
+		t++;
+		if( t==b )
+			jin=1;
+
+	}
+	if(jin==1)
+		printf("YES\n");
+	else
+		printf("NO\n");
+
+	return 0;
+}
+Problem1410
+
+#include<stdio.h>
+int main()
+{
+    int i,max=0,j,a,b,count;
+    int c[100][100];
+    scanf("%d %d",&a,&b);
+    for(i=0;i<a;++i)
+       {
+           for(j=0;j<b;++j)
+             {
+
+                 scanf("%d",&c[i][j]);
+                 if(c[i][j]>max)
+                 {
+                    max=c[i][j];
+                    count=i+1;
+                 }
+             }
+       }
+       printf("%d\n",count);
+       return 0;
+
+}
+Problem1411
+
+#include <stdio.h>
+int main()
+{
+	int i,m,n,a,j,k[100],nul=1,sum=0;
+	scanf("%d",&i);
+	for(n=1;n<=i;n++)
+	{
+		scanf("%d",&m);
+		scanf("%d",&a);
+		for(j=0;j<m;j++)
+		{scanf("%d",&k[j]);
+	    	if(k[j]==a)
+			sum=sum+j*20+a;
+		}
+		
+	}
+
+	printf("%d\n",sum);
+	
+	
+	return 0;
+}
+Problem1411
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int m,n,a,k[100];
+	int nul=1,sum=0;
+	cin>>n;
+	for(int i = 1; i <= n; i++)
+	{
+		cin>>m>>a;
+		for(int j = 0;j < m; j++)
+		{
+		    cin>>k[j];
+	    	if(k[j]==a)
+			sum=sum+j*20+a;
+		}
+
+	}
+
+	cout<<sum<<endl;
+
+
+	return 0;
+}
+Problem1413
+
+#include  <stdio.h>
+#include <string.h>
+int main()
+{
+	int n,m,sum=0,i,sum1=0;
+	char a[100],b[100];
+	gets(a);;
+	gets(b);
+	n=strlen(a);
+	m=strlen(b);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]!=' ')
+	     sum=sum+a[i];
+	}
+	
+	
+	for(i=0;i<m;i++)
+	{
+		if(b[i]!=' ')
+	    sum1=sum1+b[i];
+	}
+	
+	if(sum>sum1)
+		puts(a);
+	else 
+		puts(b);
+	return 0;
+}
+Problem1413
+
+#include  <stdio.h>
+#include <string.h>
+int main()
+{
+	int n,m,sum=0,i,sum1=0;
+	char a[100],b[100];
+	gets(a);;
+	gets(b);
+	n=strlen(a);
+	m=strlen(b);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]!=' ')
+	     sum=sum+a[i];
+	}
+
+
+	for(i=0;i<m;i++)
+	{
+		if(b[i]!=' ')
+	    sum1=sum1+b[i];
+	}
+
+	if(sum>sum1)
+		puts(a);
+	else
+		puts(b);
+	return 0;
+}
+Problem1414
+
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int is_prma(int );
+int la(int );
+int main()
+{
+	int n,p,j,o=0;
+	scanf("%d",&n);
+	while(o<n)
+	{
+		
+		p=	la(o);
+		if (p>=2)
+		{   j = is_prma(p);
+			if (j)
+              
+     	printf("%d\n",j);
+		}
+		o++;
+	}
+	return 0;
+}
+
+
+int is_prma(int a )
+{   int i;
+
+
+		
+	int b = sqrt(a);
+	for( i=2;i<=b;i++)
+	{
+		if (a%i == 0)
+			return 0;
+	}
+		if (i>b)
+			return a;
+
+	
+}
+int la(int n)
+{
+	int i,m;
+	int a[45]={0,1,1,2};
+	for(i=4;i<=n;i++)
+	{
+		a[i] = a[i-1]+a[i-2];		
+	}
+	
+	    return a[n];
+   
+}
+Problem1414
+
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int is_prma(int );
+int la(int );
+int main()
+{
+	int n,p,j,o=0;
+	scanf("%d",&n);
+	while(o<n)
+	{
+		
+		p=	la(o);
+		if (p>=2)
+		{   j = is_prma(p);
+			if (j)
+              
+     	printf("%d\n",j);
+		}
+		o++;
+	}
+	return 0;
+}
+
+
+int is_prma(int a )
+{   int i;
+
+
+		
+	int b = sqrt(a);
+	for( i=2;i<=b;i++)
+	{
+		if (a%i == 0)
+			return 0;
+	}
+		if (i>b)
+			return a;
+
+	
+}
+int la(int n)
+{
+	int i,m;
+	int a[100]={0,1,1,2};
+	for(i=4;i<=n;i++)
+	{
+		a[i] = a[i-1]+a[i-2];		
+	}
+	
+	    return a[n];
+   
+}
+Problem1415
+
+int main() 
+{
+	
+	int n, m;
+	
+
+
+		
+		double ans = 0.0;
+		
+		int i;
+		scanf("%d%d", &n, &m);
+		for( i = 1; i < n; i++)
+		{
+			
+			double pos = (double)i / n * (n+m);  
+			
+			ans += fabs(pos - floor(pos+0.5)) / (n+m);
+			
+		}
+		
+		printf("%.4lf\n", ans*10000);
+		
+	
+	
+	return 0;
+	
+}
+
+Problem1442
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int n;
+    while(cin>>n && n != 0)
+    {
+        int mapn[100][100] ={0};
+        int cur_x = n -1;
+        int cur_y = n/2;
+        mapn[cur_x][cur_y] = 1;
+        for(int i = 2; i <= n*n; i++)
+        {
+            int x = cur_x + 1;
+            int y = cur_y - 1;
+
+            if(x  >= n)  x = 0;
+            if(y  < 0)   y = n-1;
+
+            if(mapn[x][y])
+            {
+                x = cur_x - 1;
+                y = cur_y;
+
+            }
+            mapn[x][y] = i;
+            cur_x = x;
+            cur_y = y;
+        }
+
+        for(int i2 =0;i2< n; i2++)
+        {
+            int ok =1;
+            for(int t =0; t < n; t++)
+            {
+               if(ok)
+               {cout<<mapn[i2][t];ok =0;}
+               else
+               {
+                   cout<<" "<<mapn[i2][t];
+
+               }
+            }
+
+            cout<<endl;
+        }
+    }
+    return 0;
+}
+Problem1450
+
+#include <iostream>
+#include <algorithm>
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    while(cin>>n && n != 0)
+    {
+        double * ne = new double[n];
+        double all = 0;
+        for(int i =0; i < n; i++)
+        {
+            cin>>ne[i];
+            all += ne[i];
+
+        }
+        double av = all / n;
+        sort(ne,ne+n);
+        double maxn = ne[n-1];
+        double minn = ne[0];
+        double mid;
+        if(n % 2 == 1)
+        {
+             mid = ne[n/2];
+        }
+        else
+            mid = (ne[n/2] + ne[n/2 -1])* 1.0 / 2;
+        double mid_lie = (maxn + minn)/2;
+        if(mid > av)
+        printf("%.2lf %.2lf %.2lf bigtail\n",av,mid,mid_lie);
+        else if(mid < av)
+        printf("%.2lf %.2lf %.2lf bighead\n",av,mid,mid_lie);
+        else
+        printf("%.2lf %.2lf %.2lf perfect\n",av,mid,mid_lie);
+
+    }
+    return 0;
+}
+Problem1455
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <queue>
+using namespace std;
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    while(n--)
+    {
+        int m;
+        int ok =1;
+        queue<int> q;
+        scanf("%d",&m);
+        if(m % 2== 0) {scanf("%d",&m);}
+        int a[10010];
+        for(int i =0; i < m; i++) scanf("%d",a+i);
+        for(int i =0; i < m; i++)
+        {
+
+            if(a[i] % 2 == 1)
+            {
+                if(ok  ==1)
+                {
+                    printf("%d",a[i]);
+                    ok  = 0;
+                }
+                else
+                 printf(" %d",a[i]);
+
+            }
+            else
+            {
+                q.push(a[i]);
+            }
+        }
+        while(!q.empty())
+        {
+            int f =  q.front();
+            q.pop();
+            if(ok  ==1)
+            {
+                printf("%d",f);
+                ok  = 0;
+            }
+            else
+                printf(" %d",f);
+
+        }
+        printf("\n");
+
+
+
+    }
+
+}
+Problem1457
+
+#include <iostream>
+#include <vector>
+using namespace std;
+struct Node
+{
+    int a;
+    int b;
+    int c;
+};
+int main()
+{
+    int m,n;
+    string nmifo;
+    int aifjei;
+    int  aff;
+    int faf;
+    vector<Node> v;
+    cin>>m>>n;
+    for(int i =0; i< m;i++)
+    {
+        Node node;
+        cin>>node.a>>node.b>>node.c;
+        v.push_back(node);
+
+    }
+    for(int i =0; i < n; i++)
+    {
+        int p;
+        int all =0;
+        cin>>p;
+        for(int t = 0; t < v.size(); t++)
+        {
+            if(p >= v[t].a  && p < v[t].b)
+                all += v[t].c;
+        }
+        cout<<all<<endl;
+    }
+    return 0;
+}
+Problem1459
+
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+    int n;
+    double x,y;
+    int i;
+    scanf("%d",&n);
+    while(n--)
+    {
+        scanf("%lf%lf",&x,&y);
+        double cur = log(y)/log(x);
+        printf("%.2lf\n",cur);
+
+    }
+
+
+    return 0;
+}
+Problem1485
+
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 410;
+
+struct bign
+{
+    int len, s[MAXN];
+    bign ()
+    {
+        memset(s, 0, sizeof(s));
+        len = 1;
+    }
+    bign (int num) { *this = num; }
+    bign (const char *num) { *this = num; }
+    bign operator = (const int num)
+    {
+        char s[MAXN];
+        sprintf(s, "%d", num);
+        *this = s;
+        return *this;
+    }
+    bign operator = (const char *num)
+    {
+        for(int i = 0; num[i] == '0'; num++) ;  //去前导0
+        len = strlen(num);
+        for(int i = 0; i < len; i++) s[i] = num[len-i-1] - '0';
+        return *this;
+    }
+    bign operator + (const bign &b) const //+
+    {
+        bign c;
+        c.len = 0;
+        for(int i = 0, g = 0; g || i < max(len, b.len); i++)
+        {
+            int x = g;
+            if(i < len) x += s[i];
+            if(i < b.len) x += b.s[i];
+            c.s[c.len++] = x % 10;
+            g = x / 10;
+        }
+        return c;
+    }
+    bign operator += (const bign &b)
+    {
+        *this = *this + b;
+        return *this;
+    }
+    void clean()
+    {
+        while(len > 1 && !s[len-1]) len--;
+    }
+    bign operator * (const bign &b) //*
+    {
+        bign c;
+        c.len = len + b.len;
+        for(int i = 0; i < len; i++)
+        {
+            for(int j = 0; j < b.len; j++)
+            {
+                c.s[i+j] += s[i] * b.s[j];
+            }
+        }
+        for(int i = 0; i < c.len; i++)
+        {
+            c.s[i+1] += c.s[i]/10;
+            c.s[i] %= 10;
+        }
+        c.clean();
+        return c;
+    }
+    bign operator *= (const bign &b)
+    {
+        *this = *this * b;
+        return *this;
+    }
+    bign operator - (const bign &b)
+    {
+        bign c;
+        c.len = 0;
+        for(int i = 0, g = 0; i < len; i++)
+        {
+            int x = s[i] - g;
+            if(i < b.len) x -= b.s[i];
+            if(x >= 0) g = 0;
+            else
+            {
+                g = 1;
+                x += 10;
+            }
+            c.s[c.len++] = x;
+        }
+        c.clean();
+        return c;
+    }
+    bign operator -= (const bign &b)
+    {
+        *this = *this - b;
+        return *this;
+    }
+    bign operator / (const bign &b)
+    {
+        bign c, f = 0;
+        for(int i = len-1; i >= 0; i--)
+        {
+            f = f*10;
+            f.s[0] = s[i];
+            while(f >= b)
+            {
+                f -= b;
+                c.s[i]++;
+            }
+        }
+        c.len = len;
+        c.clean();
+        return c;
+    }
+    bign operator /= (const bign &b)
+    {
+        *this  = *this / b;
+        return *this;
+    }
+    bign operator % (const bign &b)
+    {
+        bign r = *this / b;
+        r = *this - r*b;
+        return r;
+    }
+    bign operator %= (const bign &b)
+    {
+        *this = *this % b;
+        return *this;
+    }
+    bool operator < (const bign &b)
+    {
+        if(len != b.len) return len < b.len;
+        for(int i = len-1; i >= 0; i--)
+        {
+            if(s[i] != b.s[i]) return s[i] < b.s[i];
+        }
+        return false;
+    }
+    bool operator > (const bign &b)
+    {
+        if(len != b.len) return len > b.len;
+        for(int i = len-1; i >= 0; i--)
+        {
+            if(s[i] != b.s[i]) return s[i] > b.s[i];
+        }
+        return false;
+    }
+    bool operator == (const bign &b)
+    {
+        return !(*this > b) && !(*this < b);
+    }
+    bool operator != (const bign &b)
+    {
+        return !(*this == b);
+    }
+    bool operator <= (const bign &b)
+    {
+        return *this < b || *this == b;
+    }
+    bool operator >= (const bign &b)
+    {
+        return *this > b || *this == b;
+    }
+    string str() const
+    {
+        string res = "";
+        for(int i = 0; i < len; i++) res = char(s[i]+'0') + res;
+        return res;
+    }
+};
+
+istream& operator >> (istream &in, bign &x)
+{
+    string s;
+    in >> s;
+    x = s.c_str();
+    return in;
+}
+
+ostream& operator << (ostream &out, const bign &x)
+{
+    out << x.str();
+    return out;
+}
+
+int main()
+{
+    bign a, b, c, d, e, f, g;
+    int n;
+    cin>>n;
+    while(n--)
+    {
+        cin>>a;
+        a.clean(), b.clean();
+        g = a%11;
+        //cout<<"a%b"<<"="<<g<<endl; // a %= b;
+        if(g != b) printf("N\n");
+        else printf("Y\n");
+    }
+    return 0;
+}
+Problem1485
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+const int maxn = 10000;
+int main()
+{
+    int m;
+    cin>>m;
+    while(m--)
+    {
+      char n[maxn];
+      int m;
+      scanf("%s",n);
+      //cin>>m;
+      int len  = strlen(n);
+      int ans = 0;
+      for(int i =0; i < len; i++)
+     {
+        ans = (int)(((long long)ans * 10 + n[i] - '0') % 11);
+
+     }
+     if(ans == 0) cout<<"Y"<<endl;
+     else cout<<"N"<<endl;
+    }
+
+}
+Problem1486
+
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 410;
+
+struct bign
+{
+    int len, s[MAXN];
+    bign ()
+    {
+        memset(s, 0, sizeof(s));
+        len = 1;
+    }
+    bign (int num) { *this = num; }
+    bign (const char *num) { *this = num; }
+    bign operator = (const int num)
+    {
+        char s[MAXN];
+        sprintf(s, "%d", num);
+        *this = s;
+        return *this;
+    }
+    bign operator = (const char *num)
+    {
+        for(int i = 0; num[i] == '0'; num++) ;  //去前导0
+        len = strlen(num);
+        for(int i = 0; i < len; i++) s[i] = num[len-i-1] - '0';
+        return *this;
+    }
+    bign operator + (const bign &b) const //+
+    {
+        bign c;
+        c.len = 0;
+        for(int i = 0, g = 0; g || i < max(len, b.len); i++)
+        {
+            int x = g;
+            if(i < len) x += s[i];
+            if(i < b.len) x += b.s[i];
+            c.s[c.len++] = x % 10;
+            g = x / 10;
+        }
+        return c;
+    }
+    bign operator += (const bign &b)
+    {
+        *this = *this + b;
+        return *this;
+    }
+    void clean()
+    {
+        while(len > 1 && !s[len-1]) len--;
+    }
+    bign operator * (const bign &b) //*
+    {
+        bign c;
+        c.len = len + b.len;
+        for(int i = 0; i < len; i++)
+        {
+            for(int j = 0; j < b.len; j++)
+            {
+                c.s[i+j] += s[i] * b.s[j];
+            }
+        }
+        for(int i = 0; i < c.len; i++)
+        {
+            c.s[i+1] += c.s[i]/10;
+            c.s[i] %= 10;
+        }
+        c.clean();
+        return c;
+    }
+    bign operator *= (const bign &b)
+    {
+        *this = *this * b;
+        return *this;
+    }
+    bign operator - (const bign &b)
+    {
+        bign c;
+        c.len = 0;
+        for(int i = 0, g = 0; i < len; i++)
+        {
+            int x = s[i] - g;
+            if(i < b.len) x -= b.s[i];
+            if(x >= 0) g = 0;
+            else
+            {
+                g = 1;
+                x += 10;
+            }
+            c.s[c.len++] = x;
+        }
+        c.clean();
+        return c;
+    }
+    bign operator -= (const bign &b)
+    {
+        *this = *this - b;
+        return *this;
+    }
+    bign operator / (const bign &b)
+    {
+        bign c, f = 0;
+        for(int i = len-1; i >= 0; i--)
+        {
+            f = f*10;
+            f.s[0] = s[i];
+            while(f >= b)
+            {
+                f -= b;
+                c.s[i]++;
+            }
+        }
+        c.len = len;
+        c.clean();
+        return c;
+    }
+    bign operator /= (const bign &b)
+    {
+        *this  = *this / b;
+        return *this;
+    }
+    bign operator % (const bign &b)
+    {
+        bign r = *this / b;
+        r = *this - r*b;
+        return r;
+    }
+    bign operator %= (const bign &b)
+    {
+        *this = *this % b;
+        return *this;
+    }
+    bool operator < (const bign &b)
+    {
+        if(len != b.len) return len < b.len;
+        for(int i = len-1; i >= 0; i--)
+        {
+            if(s[i] != b.s[i]) return s[i] < b.s[i];
+        }
+        return false;
+    }
+    bool operator > (const bign &b)
+    {
+        if(len != b.len) return len > b.len;
+        for(int i = len-1; i >= 0; i--)
+        {
+            if(s[i] != b.s[i]) return s[i] > b.s[i];
+        }
+        return false;
+    }
+    bool operator == (const bign &b)
+    {
+        return !(*this > b) && !(*this < b);
+    }
+    bool operator != (const bign &b)
+    {
+        return !(*this == b);
+    }
+    bool operator <= (const bign &b)
+    {
+        return *this < b || *this == b;
+    }
+    bool operator >= (const bign &b)
+    {
+        return *this > b || *this == b;
+    }
+    string str() const
+    {
+        string res = "";
+        for(int i = 0; i < len; i++) res = char(s[i]+'0') + res;
+        return res;
+    }
+};
+
+istream& operator >> (istream &in, bign &x)
+{
+    string s;
+    in >> s;
+    x = s.c_str();
+    return in;
+}
+
+ostream& operator << (ostream &out, const bign &x)
+{
+    out << x.str();
+    return out;
+}
+
+int main()
+{
+    bign a, b, c, d, e, f, g;
+    int n;
+    cin>>n;
+    while(n--)
+    {
+        cin>>a;
+        a.clean(), b.clean();
+        g = a%8;
+        //cout<<"a%b"<<"="<<g<<endl; // a %= b;
+        if(g != b) printf("N\n");
+        else printf("Y\n");
+    }
+    return 0;
+}
+Problem1486
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+const int maxn = 10000;
+int main()
+{
+    int m;
+    cin>>m;
+    while(m--)
+    {
+      char n[maxn];
+      int m;
+      scanf("%s",n);
+      //cin>>m;
+      int len  = strlen(n);
+      int ans = 0;
+      for(int i =0; i < len; i++)
+     {
+        ans = (int)(((long long)ans * 10 + n[i] - '0') % 8);
+
+     }
+     if(ans == 0) cout<<"Y"<<endl;
+     else cout<<"N"<<endl;
+    }
+
+}
+Problem1487
+
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 410;
+
+struct bign
+{
+    int len, s[MAXN];
+    bign ()
+    {
+        memset(s, 0, sizeof(s));
+        len = 1;
+    }
+    bign (int num) { *this = num; }
+    bign (const char *num) { *this = num; }
+    bign operator = (const int num)
+    {
+        char s[MAXN];
+        sprintf(s, "%d", num);
+        *this = s;
+        return *this;
+    }
+    bign operator = (const char *num)
+    {
+        for(int i = 0; num[i] == '0'; num++) ;  //去前导0
+        len = strlen(num);
+        for(int i = 0; i < len; i++) s[i] = num[len-i-1] - '0';
+        return *this;
+    }
+    bign operator + (const bign &b) const //+
+    {
+        bign c;
+        c.len = 0;
+        for(int i = 0, g = 0; g || i < max(len, b.len); i++)
+        {
+            int x = g;
+            if(i < len) x += s[i];
+            if(i < b.len) x += b.s[i];
+            c.s[c.len++] = x % 10;
+            g = x / 10;
+        }
+        return c;
+    }
+    bign operator += (const bign &b)
+    {
+        *this = *this + b;
+        return *this;
+    }
+    void clean()
+    {
+        while(len > 1 && !s[len-1]) len--;
+    }
+    bign operator * (const bign &b) //*
+    {
+        bign c;
+        c.len = len + b.len;
+        for(int i = 0; i < len; i++)
+        {
+            for(int j = 0; j < b.len; j++)
+            {
+                c.s[i+j] += s[i] * b.s[j];
+            }
+        }
+        for(int i = 0; i < c.len; i++)
+        {
+            c.s[i+1] += c.s[i]/10;
+            c.s[i] %= 10;
+        }
+        c.clean();
+        return c;
+    }
+    bign operator *= (const bign &b)
+    {
+        *this = *this * b;
+        return *this;
+    }
+    bign operator - (const bign &b)
+    {
+        bign c;
+        c.len = 0;
+        for(int i = 0, g = 0; i < len; i++)
+        {
+            int x = s[i] - g;
+            if(i < b.len) x -= b.s[i];
+            if(x >= 0) g = 0;
+            else
+            {
+                g = 1;
+                x += 10;
+            }
+            c.s[c.len++] = x;
+        }
+        c.clean();
+        return c;
+    }
+    bign operator -= (const bign &b)
+    {
+        *this = *this - b;
+        return *this;
+    }
+    bign operator / (const bign &b)
+    {
+        bign c, f = 0;
+        for(int i = len-1; i >= 0; i--)
+        {
+            f = f*10;
+            f.s[0] = s[i];
+            while(f >= b)
+            {
+                f -= b;
+                c.s[i]++;
+            }
+        }
+        c.len = len;
+        c.clean();
+        return c;
+    }
+    bign operator /= (const bign &b)
+    {
+        *this  = *this / b;
+        return *this;
+    }
+    bign operator % (const bign &b)
+    {
+        bign r = *this / b;
+        r = *this - r*b;
+        return r;
+    }
+    bign operator %= (const bign &b)
+    {
+        *this = *this % b;
+        return *this;
+    }
+    bool operator < (const bign &b)
+    {
+        if(len != b.len) return len < b.len;
+        for(int i = len-1; i >= 0; i--)
+        {
+            if(s[i] != b.s[i]) return s[i] < b.s[i];
+        }
+        return false;
+    }
+    bool operator > (const bign &b)
+    {
+        if(len != b.len) return len > b.len;
+        for(int i = len-1; i >= 0; i--)
+        {
+            if(s[i] != b.s[i]) return s[i] > b.s[i];
+        }
+        return false;
+    }
+    bool operator == (const bign &b)
+    {
+        return !(*this > b) && !(*this < b);
+    }
+    bool operator != (const bign &b)
+    {
+        return !(*this == b);
+    }
+    bool operator <= (const bign &b)
+    {
+        return *this < b || *this == b;
+    }
+    bool operator >= (const bign &b)
+    {
+        return *this > b || *this == b;
+    }
+    string str() const
+    {
+        string res = "";
+        for(int i = 0; i < len; i++) res = char(s[i]+'0') + res;
+        return res;
+    }
+};
+
+istream& operator >> (istream &in, bign &x)
+{
+    string s;
+    in >> s;
+    x = s.c_str();
+    return in;
+}
+
+ostream& operator << (ostream &out, const bign &x)
+{
+    out << x.str();
+    return out;
+}
+
+int main()
+{
+    bign a, b, c, d, e, f, g;
+    int n;
+    cin>>n;
+    while(n--)
+    {
+        cin>>a;
+        a.clean(), b.clean();
+        g = a%7;
+        //cout<<"a%b"<<"="<<g<<endl; // a %= b;
+        if(g != b) printf("N\n");
+        else printf("Y\n");
+    }
+    return 0;
+}
+Problem1487
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+const int maxn = 10000;
+int main()
+{
+    int m;
+    cin>>m;
+    while(m--)
+    {
+      char n[maxn];
+      int m;
+      scanf("%s",n);
+      //cin>>m;
+      int len  = strlen(n);
+      int ans = 0;
+      for(int i =0; i < len; i++)
+     {
+        ans = (int)(((long long)ans * 10 + n[i] - '0') % 7);
+
+     }
+     if(ans == 0) cout<<"Y"<<endl;
+     else cout<<"N"<<endl;
+    }
+
+}
+Problem1494
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    while(cin>>n && n !=0)
+    {
+        int a[20] = {0};
+        string m[20] ={" ","父","祖","曾","高","天","烈","太","远","鼻"};
+
+        a[0] = n;
+        for(int i =1; i < 10; i++)
+        {
+            if(a[i-1] % 2== 0) a[i] = a[i-1] /2;
+            else a[i] = 3 * a[i-1] + 1;
+        }
+        if(a[1] == 1 )
+        {
+            cout<<"no thanks"<<endl;
+        }
+        else
+        {
+            cout<<"thank you:";
+            for(int i = 2; i < 10 ;i++)
+         {
+
+            cout<<m[i]<<a[i];
+
+            if(a[i] == 1)  break;
+         }
+        cout<<endl;
+
+        }
+
+    }
+    return 0;
+}
+Problem1495
+
+#include <stdio.h>
+#include <vector>
+struct Node
+{
+    int x1;
+    int y1;
+    int z1;
+};
+int main ()
+{
+    int n;
+
+    while(scanf ("%d",&n) && n != 0)
+    {
+         int t=0,s=0,x1=0,y1=0,z1=0,i;
+         int x[5000],y[5000],z[5000],f[5000];
+         for (i=1;i<=n;i++)
+    {
+        scanf ("%d:%d:%d(-%d)",&x[i],&y[i],&z[i],&f[i]);
+        x1+=x[i];
+        y1+=y[i];
+        z1+=z[i];
+        t+=f[i];
+
+    }
+    y1 += (t *20);
+    //printf ("%d:%d:%d\n",x1,y1,z1);
+    if(z1 >= 60)
+    {
+        y1 += z1/60;
+        z1 %= 60;
+    }
+    if(y1 >= 60)
+    {
+        x1 += y1/60;
+        y1 %= 60;
+    }
+    printf ("%d:%d:%d\n",x1,y1,z1);
+
+    }
+
+
+    return 0;
+}
+Problem1497
+
+#include <stdio.h>
+int main ()
+{
+    double a,b,c,d,x0,x1,x2,x3,x4;
+    scanf ("%lf%lf%lf%lf",&a,&b,&c,&d);
+    x4=a*b*c*d;
+    x3=(1-a)*b*c*d+a*(1-b)*c*d+a*b*(1-c)*d+a*b*c*(1-d);
+    x2=(1-a)*(1-b)*c*d+(1-a)*b*(1-c)*d+(1-a)*b*c*(1-d)+a*(1-b)*(1-c)*d+a*(1-b)*c*(1-d)+a*b*(1-c)*(1-d);
+    x1=(1-a)*(1-b)*(1-c)*d+(1-a)*b*(1-c)*(1-d)+a*(1-b)*(1-c)*(1-d)+(1-a)*(1-b)*c*(1-d);
+    x0=(1-a)*(1-b)*(1-c)*(1-d);
+
+
+    printf ("4 %.2lf%%\n",x4*100);
+    printf ("3 %.2lf%%\n",x3*100);
+    printf ("2 %.2lf%%\n",x2*100);
+    printf ("1 %.2lf%%\n",x1*100);
+    printf ("0 %.2lf%%",x0*100);
+
+    return 0;
+}
+Problem1500
+
+#include <iostream>
+
+using namespace std;
+int n;
+int min2;
+int a[5];
+void dfs(int cur,int m)
+{
+    if(m == n) { if(cur < min2) min2 = cur;}
+    else
+    {
+        for(int i =1; i <= 3; i++)
+        {
+            if(m + i > n) break;
+            dfs(cur + a[i],m + i);
+        }
+    }
+}
+int main()
+{
+
+
+    cin>>a[1]>>a[2]>>a[3];
+    while(cin>>n && n!=0)
+    {
+        min2 = 10000000;
+        for(int i =1; i <= 3; i++)
+        {
+            dfs(a[i],i);
+        }
+        cout<<min2<<endl;
+    }
+    return 0;
+}
+???  中文  ?????  English  ??? 
+All Copyright Reserved 2010-2011 Dalian Neusoft Institute of Information TEAM
+Anything about the Problems, Please Contact Admin:admin
